@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlantUML.Lib", "PlantUML.Lib\PlantUML.Lib.csproj", "{B3866A8C-4498-48BC-9287-0BF648974CA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "TestProject1\TestProject1.csproj", "{A933D5B9-7B23-4EA6-AD53-BD8DA04824D4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3866A8C-4498-48BC-9287-0BF648974CA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3866A8C-4498-48BC-9287-0BF648974CA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3866A8C-4498-48BC-9287-0BF648974CA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3866A8C-4498-48BC-9287-0BF648974CA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A933D5B9-7B23-4EA6-AD53-BD8DA04824D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A933D5B9-7B23-4EA6-AD53-BD8DA04824D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A933D5B9-7B23-4EA6-AD53-BD8DA04824D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A933D5B9-7B23-4EA6-AD53-BD8DA04824D4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {644B849F-21EC-454B-BFB7-732F648D2250}
+	EndGlobalSection
+EndGlobal

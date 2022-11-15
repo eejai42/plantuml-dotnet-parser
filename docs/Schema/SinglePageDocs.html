@@ -1,0 +1,118 @@
+<html><head><title>plantuml-dotnet-parser - Single Page Doc s</title><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous" /></head><body style="padding: 0.8em;"><h1>        
+plantuml-dotnet-parser  Data model</h1><a class="btn btn-sm btn-primary" href="Index.html"><<&nbsp;Back Interactive Object Explorer</a><h3>Table of Contents</h3><ol><li><a href="#PlantUML">PlantUML</a></li><li><a href="#ParticipantType">ParticipantType</a></li><li><a href="#TargetFormat">TargetFormat</a></li><li><a href="#Keyword">Keyword</a></li><li><a href="#SequenceType">SequenceType</a></li><li><a href="#PlantTextFile">PlantTextFile</a></li><li><a href="#Instruction">Instruction</a></li></ol><table style="width: 100%"><tr><td colspan="3"><span id="PlantUML" />
+                <div style="clear: both"></div><div class="row"><div class="col-md-12">
+                        <a name="PlantUML"></a>
+                        <hr /><h2>
+                            
+                            
+                            
+                            
+                            PlantUML  
+                        </h2><div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"></div></div></div></td></tr><tr><th align="left" style="width: 5em;">CRUD</th><th align="left">Name</th><th align="left">Type</th><th align="left">Original Name</th></tr><tr><td style="padding: 0.25em; width: 5em;"><img style="width: 1em;" src="images/primary-key.png" /></td><td>
+                        PlantUMLId</td><td>GUID</td><td>__PlantUMLId</td></tr><tr><th colspan="3" style="padding-top: 1em;">PlantUML Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> PlantUMLId
+
+<b>FROM</b> PlantUML
+
+</div></td></tr><tr><td colspan="3" style="font-size: 0.8em; padding: 0.25em;"></td></tr><tr><td colspan="3"><span id="ParticipantType" />
+                <div style="clear: both"></div><div class="row"><div class="col-md-12">
+                        <a name="ParticipantType"></a>
+                        <hr /><h2>
+                            
+                            
+                            
+                            
+                            ParticipantType  
+                        </h2><div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"></div></div></div></td></tr><tr><th align="left" style="width: 5em;">CRUD</th><th align="left">Name</th><th align="left">Type</th><th align="left">Original Name</th></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        Name</td><td>TEXT</td><td></td></tr><tr><th colspan="3" style="padding-top: 1em;">ParticipantType Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> Name
+
+<b>FROM</b> ParticipantType
+
+</div></td></tr><tr><td colspan="3" style="font-size: 0.8em; padding: 0.25em;"></td></tr><tr><td colspan="3"><span id="TargetFormat" />
+                <div style="clear: both"></div><div class="row"><div class="col-md-12">
+                        <a name="TargetFormat"></a>
+                        <hr /><h2>
+                            
+                            
+                            
+                            
+                            TargetFormat  
+                        </h2><div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"></div></div></div></td></tr><tr><th align="left" style="width: 5em;">CRUD</th><th align="left">Name</th><th align="left">Type</th><th align="left">Original Name</th></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        Name</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        DisplayName</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        IsUMLDiagram</td><td>BOOLEAN</td><td></td></tr><tr><th colspan="3" style="padding-top: 1em;">TargetFormat Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> Name, DisplayName, IsUMLDiagram
+
+<b>FROM</b> TargetFormat
+
+</div></td></tr><tr><td colspan="3" style="font-size: 0.8em; padding: 0.25em;"></td></tr><tr><td colspan="3"><span id="Keyword" />
+                <div style="clear: both"></div><div class="row"><div class="col-md-12">
+                        <a name="Keyword"></a>
+                        <hr /><h2>
+                            
+                            
+                            
+                            
+                            Keyword  
+                        </h2><div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"></div></div></div></td></tr><tr><th align="left" style="width: 5em;">CRUD</th><th align="left">Name</th><th align="left">Type</th><th align="left">Original Name</th></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        Name</td><td>TEXT</td><td></td></tr><tr><th colspan="3" style="padding-top: 1em;">Keyword Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> Name
+
+<b>FROM</b> Keyword
+
+</div></td></tr><tr><td colspan="3" style="font-size: 0.8em; padding: 0.25em;"></td></tr><tr><td colspan="3"><span id="SequenceType" />
+                <div style="clear: both"></div><div class="row"><div class="col-md-12">
+                        <a name="SequenceType"></a>
+                        <hr /><h2>
+                            
+                            
+                            
+                            
+                            SequenceType  
+                        </h2><div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"></div></div></div></td></tr><tr><th align="left" style="width: 5em;">CRUD</th><th align="left">Name</th><th align="left">Type</th><th align="left">Original Name</th></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        Name</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        SequenceIdentifier</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        ReverseSequenceIdentifier</td><td>TEXT</td><td></td></tr><tr><th colspan="3" style="padding-top: 1em;">SequenceType Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> Name, SequenceIdentifier, ReverseSequenceIdentifier
+
+<b>FROM</b> SequenceType
+
+</div></td></tr><tr><td colspan="3" style="font-size: 0.8em; padding: 0.25em;"></td></tr><tr><td colspan="3"><span id="PlantTextFile" />
+                <div style="clear: both"></div><div class="row"><div class="col-md-12">
+                        <a name="PlantTextFile"></a>
+                        <hr /><h2>
+                            
+                            
+                            
+                            
+                            PlantTextFile  
+                        </h2><div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"></div></div></div></td></tr><tr><th align="left" style="width: 5em;">CRUD</th><th align="left">Name</th><th align="left">Type</th><th align="left">Original Name</th></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        Name</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        PlantText</td><td>TEXT</td><td></td></tr><tr><th colspan="3" style="padding-top: 1em;">PlantTextFile Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> Name, PlantText
+
+<b>FROM</b> PlantTextFile
+
+</div></td></tr><tr><td colspan="3" style="font-size: 0.8em; padding: 0.25em;"></td></tr><tr><td colspan="3"><span id="Instruction" />
+                <div style="clear: both"></div><div class="row"><div class="col-md-12">
+                        <a name="Instruction"></a>
+                        <hr /><h2>
+                            
+                            
+                            
+                            
+                            Instruction  
+                        </h2><div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"></div></div></div></td></tr><tr><th align="left" style="width: 5em;">CRUD</th><th align="left">Name</th><th align="left">Type</th><th align="left">Original Name</th></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        Name</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        InstructionType</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        Sequence</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        LeftParticipantName</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        RightParticipantName</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        AdditionalText</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        UseAlternateInstructionFormat</td><td>BOOLEAN</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        AlternateLeftParticipantName</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        AlternatSequenceId</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        AlternateRightParticipantName</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        ExpectedPlantText</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        LeftRightInstructionText</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        DeclarationInstructionText</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        SortOrder</td><td>BYTE</td><td></td></tr><tr><th colspan="3" style="padding-top: 1em;">Instruction Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> Name, InstructionType, Sequence, LeftParticipantName, RightParticipantName, AdditionalText, UseAlternateInstructionFormat, AlternateLeftParticipantName, AlternatSequenceId, AlternateRightParticipantName, ExpectedPlantText, LeftRightInstructionText, DeclarationInstructionText, SortOrder
+
+<b>FROM</b> Instruction
+
+</div></td></tr><tr><td colspan="3" style="font-size: 0.8em; padding: 0.25em;"></td></tr></table></body></html>

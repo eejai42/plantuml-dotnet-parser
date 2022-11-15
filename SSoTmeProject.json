@@ -1,0 +1,82 @@
+{
+  "ShowHidden": false,
+  "ShowAllFiles": false,
+  "SaveDisabled": false,
+  "SSoTmeProjectId": "8269c68e-87ce-4f90-b3aa-488c3f54ae68",
+  "Name": "plantuml-dotnet-parser",
+  "ProjectSettings": [
+    {
+      "ProjectSettingId": "8e0307b8-6f26-456c-9f65-ecd95c9a4fe1",
+      "Name": "project-name",
+      "Value": "plantuml-dotnet-parser"
+    }
+  ],
+  "ProjectTranspilers": [
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "19d8142a-2f4d-46ac-9de6-77441f233192",
+        "Name": "AirtableToXml",
+        "Description": "Extracts the contents of an airtable base as a single Xml file."
+      },
+      "ProjectTranspilerId": "43f9414a-25ee-43e1-91f0-2cc3938fb603",
+      "Name": "AirtableToXml",
+      "RelativePath": "/SSoT",
+      "CommandLine": "airtable/airtable-to-xml appEVY3ylbj91g5ki -p entities=PlantTextFiles,Instruction,Participants,Keywords,TargetFormats,SequenceTypes"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
+        "Name": "XmlXsltTransform",
+        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."
+      },
+      "ProjectTranspilerId": "64cc9255-c634-46b5-8109-6b9b7f97481b",
+      "Name": "XmlXsltTransform",
+      "RelativePath": "/PlantUMLSSoT",
+      "CommandLine": "codee42/xml-xslt-transform -i ..\\SSoT\\Airtable.xml -i CreatePlantUMLSSoT.xslt"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "fd14a7d7-472c-4dc6-8f5c-ff7baeb4f5a7",
+        "Name": "XmlToOdxml",
+        "Description": "Extract the Schema of an Xml file and then convert that into Odxml"
+      },
+      "ProjectTranspilerId": "561702e3-a56a-4136-aedb-2888f1d98519",
+      "Name": "XmlToOdxml",
+      "RelativePath": "/ODXML/RAW",
+      "CommandLine": "odxml42/xml-to-odxml -i ..\\..\\PlantUMLSSoT\\PlantUML.xml"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "bbea1b94-36ed-44f6-8d99-20ac4c49f982",
+        "Name": "OdxmlToCleanOdxml",
+        "Description": "Allows for any data model to be \"cleaned up\" while preserving a \"map\" between the old/new models"
+      },
+      "ProjectTranspilerId": "0f7a6a56-7a3b-4c0e-bde9-7113cb4131bc",
+      "Name": "OdxmlToCleanOdxml",
+      "RelativePath": "/ODXML",
+      "CommandLine": "odxml42/odxml-to-clean-odxml -i .\\RAW\\DataSchema.odxml -i Renames.xml"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "8defe7a3-89cf-4989-b679-d9226519f622",
+        "Name": "OdxmlToNodeJSDocs",
+        "Description": "Creates easy to read/navigate html documentation for an Odxml Schema."
+      },
+      "ProjectTranspilerId": "acde3d06-f2d4-48b7-9304-6cfb7292492b",
+      "Name": "OdxmlToNodeJSDocs",
+      "RelativePath": "/docs/Schema",
+      "CommandLine": "odxml42/odxml-to-nodejs-docs -i ..\\..\\ODXML\\DataSchema.odxml"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "595b7fe7-7f64-44c2-b48c-d096d997211f",
+        "Name": "OdxmlToCSharpPOCOs",
+        "Description": "Odxml To CSharp POCOs"
+      },
+      "ProjectTranspilerId": "5a5e3fa9-6656-456b-acaf-dac12bb3b2c9",
+      "Name": "OdxmlToCSharpPOCOs",
+      "RelativePath": "/PlantUMLDotnET/PlantUML.Lib/DataClasses",
+      "CommandLine": "odxml42/odxml-to-csharp-pocos -i ..\\..\\..\\ODXML\\DataSchema.odxml"
+    }
+  ]
+}

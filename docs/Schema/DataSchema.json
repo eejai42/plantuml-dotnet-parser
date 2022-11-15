@@ -1,0 +1,792 @@
+
+{
+  "Ontology": {
+    "OntologyGroups": {
+      "OntologyGroup": {
+        "Name": "ODXMLSchema",
+        "Namespace": "com.anabstractlevel.Schemas",
+        "ObjectDefs": {
+          "ObjectDef": [
+            {
+              "Name": "PlantUML",
+              "OriginalName": "PlantUML",
+              "DisplayName": "",
+              "AirtableEntity": "",
+              "AirtableData": "",
+              "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema",
+              "PropertyDefs": {
+                "PropertyDef": {
+                  "Name": "PlantUMLId",
+                  "OriginalName": "__PlantUMLId",
+                  "Description": "",
+                  "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                  "DefaultValue": "(newid()))",
+                  "DataType": "GUID",
+                  "OriginalDataType": "GUID",
+                  "IsPrimaryKey": "1",
+                  "IsAttribute": "0",
+                  "IsCollection": "",
+                  "MatchingMetaData": {
+                    "FromName": "PlantUML.__PlantUMLId",
+                    "FromObjectName": "PlantUML",
+                    "FromPropertyName": "__PlantUMLId",
+                    "ToName": "PlantUMLId",
+                    "ToObjectName": "PlantUML",
+                    "ToPropertyName": "PlantUMLId",
+                    "Include": "true",
+                    "IsCollection": "false",
+                    "Description": "",
+                    "DataType": "GUID"
+                  }
+                }
+              },
+              "PluralName": "",
+              "MatchingMetaData": {
+                "FromName": "PlantUML",
+                "FromObjectName": "PlantUML",
+                "FromPropertyName": "",
+                "ToName": "PlantUML",
+                "ToObjectName": "PlantUML",
+                "ToPropertyName": "",
+                "Include": "true"
+              }
+            },
+            {
+              "Name": "ParticipantType",
+              "OriginalName": "ParticipantType",
+              "DisplayName": "",
+              "AirtableEntity": "",
+              "AirtableData": "",
+              "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema",
+              "PropertyDefs": {
+                "PropertyDef": {
+                  "Name": "Name",
+                  "OriginalName": "Name",
+                  "Description": "",
+                  "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                  "DataType": "TEXT",
+                  "OriginalDataType": "TEXT",
+                  "Length": "100",
+                  "IsNullable": "1",
+                  "IsPrimaryKey": "0",
+                  "IsAttribute": "0",
+                  "IsCollection": "0",
+                  "MatchingMetaData": {
+                    "FromName": "ParticipantType.Name",
+                    "FromObjectName": "ParticipantType",
+                    "FromPropertyName": "Name",
+                    "ToName": "Name",
+                    "ToObjectName": "ParticipantType",
+                    "ToPropertyName": "Name",
+                    "Include": "true",
+                    "IsCollection": "0",
+                    "Description": "",
+                    "DataType": "TEXT"
+                  }
+                }
+              },
+              "PluralName": "",
+              "MatchingMetaData": {
+                "FromName": "ParticipantType",
+                "FromObjectName": "ParticipantType",
+                "FromPropertyName": "",
+                "ToName": "ParticipantType",
+                "ToObjectName": "ParticipantType",
+                "ToPropertyName": "",
+                "Include": "true"
+              }
+            },
+            {
+              "Name": "TargetFormat",
+              "OriginalName": "TargetFormat",
+              "DisplayName": "",
+              "AirtableEntity": "",
+              "AirtableData": "",
+              "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema",
+              "PropertyDefs": {
+                "PropertyDef": [
+                  {
+                    "Name": "Name",
+                    "OriginalName": "Name",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "OriginalDataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "TargetFormat.Name",
+                      "FromObjectName": "TargetFormat",
+                      "FromPropertyName": "Name",
+                      "ToName": "Name",
+                      "ToObjectName": "TargetFormat",
+                      "ToPropertyName": "Name",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "TEXT"
+                    }
+                  },
+                  {
+                    "Name": "DisplayName",
+                    "OriginalName": "DisplayName",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "OriginalDataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "TargetFormat.DisplayName",
+                      "FromObjectName": "TargetFormat",
+                      "FromPropertyName": "DisplayName",
+                      "ToName": "DisplayName",
+                      "ToObjectName": "TargetFormat",
+                      "ToPropertyName": "DisplayName",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "TEXT"
+                    }
+                  },
+                  {
+                    "Name": "IsUMLDiagram",
+                    "OriginalName": "IsUMLDiagram",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "BOOLEAN",
+                    "OriginalDataType": "BOOLEAN",
+                    "Length": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "TargetFormat.IsUMLDiagram",
+                      "FromObjectName": "TargetFormat",
+                      "FromPropertyName": "IsUMLDiagram",
+                      "ToName": "IsUMLDiagram",
+                      "ToObjectName": "TargetFormat",
+                      "ToPropertyName": "IsUMLDiagram",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "BOOLEAN"
+                    }
+                  }
+                ]
+              },
+              "PluralName": "",
+              "MatchingMetaData": {
+                "FromName": "TargetFormat",
+                "FromObjectName": "TargetFormat",
+                "FromPropertyName": "",
+                "ToName": "TargetFormat",
+                "ToObjectName": "TargetFormat",
+                "ToPropertyName": "",
+                "Include": "true"
+              }
+            },
+            {
+              "Name": "Keyword",
+              "OriginalName": "Keyword",
+              "DisplayName": "",
+              "AirtableEntity": "",
+              "AirtableData": "",
+              "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema",
+              "PropertyDefs": {
+                "PropertyDef": {
+                  "Name": "Name",
+                  "OriginalName": "Name",
+                  "Description": "",
+                  "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                  "DataType": "TEXT",
+                  "OriginalDataType": "TEXT",
+                  "Length": "100",
+                  "IsNullable": "1",
+                  "IsPrimaryKey": "0",
+                  "IsAttribute": "0",
+                  "IsCollection": "0",
+                  "MatchingMetaData": {
+                    "FromName": "Keyword.Name",
+                    "FromObjectName": "Keyword",
+                    "FromPropertyName": "Name",
+                    "ToName": "Name",
+                    "ToObjectName": "Keyword",
+                    "ToPropertyName": "Name",
+                    "Include": "true",
+                    "IsCollection": "0",
+                    "Description": "",
+                    "DataType": "TEXT"
+                  }
+                }
+              },
+              "PluralName": "",
+              "MatchingMetaData": {
+                "FromName": "Keyword",
+                "FromObjectName": "Keyword",
+                "FromPropertyName": "",
+                "ToName": "Keyword",
+                "ToObjectName": "Keyword",
+                "ToPropertyName": "",
+                "Include": "true"
+              }
+            },
+            {
+              "Name": "SequenceType",
+              "OriginalName": "SequenceType",
+              "DisplayName": "",
+              "AirtableEntity": "",
+              "AirtableData": "",
+              "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema",
+              "PropertyDefs": {
+                "PropertyDef": [
+                  {
+                    "Name": "Name",
+                    "OriginalName": "Name",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "OriginalDataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "SequenceType.Name",
+                      "FromObjectName": "SequenceType",
+                      "FromPropertyName": "Name",
+                      "ToName": "Name",
+                      "ToObjectName": "SequenceType",
+                      "ToPropertyName": "Name",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "TEXT"
+                    }
+                  },
+                  {
+                    "Name": "SequenceIdentifier",
+                    "OriginalName": "SequenceIdentifier",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "OriginalDataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "SequenceType.SequenceIdentifier",
+                      "FromObjectName": "SequenceType",
+                      "FromPropertyName": "SequenceIdentifier",
+                      "ToName": "SequenceIdentifier",
+                      "ToObjectName": "SequenceType",
+                      "ToPropertyName": "SequenceIdentifier",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "TEXT"
+                    }
+                  },
+                  {
+                    "Name": "ReverseSequenceIdentifier",
+                    "OriginalName": "ReverseSequenceIdentifier",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "OriginalDataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "SequenceType.ReverseSequenceIdentifier",
+                      "FromObjectName": "SequenceType",
+                      "FromPropertyName": "ReverseSequenceIdentifier",
+                      "ToName": "ReverseSequenceIdentifier",
+                      "ToObjectName": "SequenceType",
+                      "ToPropertyName": "ReverseSequenceIdentifier",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "TEXT"
+                    }
+                  }
+                ]
+              },
+              "PluralName": "",
+              "MatchingMetaData": {
+                "FromName": "SequenceType",
+                "FromObjectName": "SequenceType",
+                "FromPropertyName": "",
+                "ToName": "SequenceType",
+                "ToObjectName": "SequenceType",
+                "ToPropertyName": "",
+                "Include": "true"
+              }
+            },
+            {
+              "Name": "PlantTextFile",
+              "OriginalName": "PlantTextFile",
+              "DisplayName": "",
+              "AirtableEntity": "",
+              "AirtableData": "",
+              "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema",
+              "PropertyDefs": {
+                "PropertyDef": [
+                  {
+                    "Name": "Name",
+                    "OriginalName": "Name",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "OriginalDataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "PlantTextFile.Name",
+                      "FromObjectName": "PlantTextFile",
+                      "FromPropertyName": "Name",
+                      "ToName": "Name",
+                      "ToObjectName": "PlantTextFile",
+                      "ToPropertyName": "Name",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "TEXT"
+                    }
+                  },
+                  {
+                    "Name": "PlantText",
+                    "OriginalName": "PlantText",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "OriginalDataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "PlantTextFile.PlantText",
+                      "FromObjectName": "PlantTextFile",
+                      "FromPropertyName": "PlantText",
+                      "ToName": "PlantText",
+                      "ToObjectName": "PlantTextFile",
+                      "ToPropertyName": "PlantText",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "TEXT"
+                    }
+                  }
+                ]
+              },
+              "PluralName": "",
+              "MatchingMetaData": {
+                "FromName": "PlantTextFile",
+                "FromObjectName": "PlantTextFile",
+                "FromPropertyName": "",
+                "ToName": "PlantTextFile",
+                "ToObjectName": "PlantTextFile",
+                "ToPropertyName": "",
+                "Include": "true"
+              }
+            },
+            {
+              "Name": "Instruction",
+              "OriginalName": "Instruction",
+              "DisplayName": "",
+              "AirtableEntity": "",
+              "AirtableData": "",
+              "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema",
+              "PropertyDefs": {
+                "PropertyDef": [
+                  {
+                    "Name": "Name",
+                    "OriginalName": "Name",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "OriginalDataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "Instruction.Name",
+                      "FromObjectName": "Instruction",
+                      "FromPropertyName": "Name",
+                      "ToName": "Name",
+                      "ToObjectName": "Instruction",
+                      "ToPropertyName": "Name",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "TEXT"
+                    }
+                  },
+                  {
+                    "Name": "InstructionType",
+                    "OriginalName": "InstructionType",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "OriginalDataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "Instruction.InstructionType",
+                      "FromObjectName": "Instruction",
+                      "FromPropertyName": "InstructionType",
+                      "ToName": "InstructionType",
+                      "ToObjectName": "Instruction",
+                      "ToPropertyName": "InstructionType",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "TEXT"
+                    }
+                  },
+                  {
+                    "Name": "Sequence",
+                    "OriginalName": "Sequence",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "OriginalDataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "Instruction.Sequence",
+                      "FromObjectName": "Instruction",
+                      "FromPropertyName": "Sequence",
+                      "ToName": "Sequence",
+                      "ToObjectName": "Instruction",
+                      "ToPropertyName": "Sequence",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "TEXT"
+                    }
+                  },
+                  {
+                    "Name": "LeftParticipantName",
+                    "OriginalName": "LeftParticipantName",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "OriginalDataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "Instruction.LeftParticipantName",
+                      "FromObjectName": "Instruction",
+                      "FromPropertyName": "LeftParticipantName",
+                      "ToName": "LeftParticipantName",
+                      "ToObjectName": "Instruction",
+                      "ToPropertyName": "LeftParticipantName",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "TEXT"
+                    }
+                  },
+                  {
+                    "Name": "RightParticipantName",
+                    "OriginalName": "RightParticipantName",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "OriginalDataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "Instruction.RightParticipantName",
+                      "FromObjectName": "Instruction",
+                      "FromPropertyName": "RightParticipantName",
+                      "ToName": "RightParticipantName",
+                      "ToObjectName": "Instruction",
+                      "ToPropertyName": "RightParticipantName",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "TEXT"
+                    }
+                  },
+                  {
+                    "Name": "AdditionalText",
+                    "OriginalName": "AdditionalText",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "OriginalDataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "Instruction.AdditionalText",
+                      "FromObjectName": "Instruction",
+                      "FromPropertyName": "AdditionalText",
+                      "ToName": "AdditionalText",
+                      "ToObjectName": "Instruction",
+                      "ToPropertyName": "AdditionalText",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "TEXT"
+                    }
+                  },
+                  {
+                    "Name": "UseAlternateInstructionFormat",
+                    "OriginalName": "UseAlternateInstructionFormat",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "BOOLEAN",
+                    "OriginalDataType": "BOOLEAN",
+                    "Length": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "Instruction.UseAlternateInstructionFormat",
+                      "FromObjectName": "Instruction",
+                      "FromPropertyName": "UseAlternateInstructionFormat",
+                      "ToName": "UseAlternateInstructionFormat",
+                      "ToObjectName": "Instruction",
+                      "ToPropertyName": "UseAlternateInstructionFormat",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "BOOLEAN"
+                    }
+                  },
+                  {
+                    "Name": "AlternateLeftParticipantName",
+                    "OriginalName": "AlternateLeftParticipantName",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "OriginalDataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "Instruction.AlternateLeftParticipantName",
+                      "FromObjectName": "Instruction",
+                      "FromPropertyName": "AlternateLeftParticipantName",
+                      "ToName": "AlternateLeftParticipantName",
+                      "ToObjectName": "Instruction",
+                      "ToPropertyName": "AlternateLeftParticipantName",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "TEXT"
+                    }
+                  },
+                  {
+                    "Name": "AlternatSequenceId",
+                    "OriginalName": "AlternatSequenceId",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "OriginalDataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "Instruction.AlternatSequenceId",
+                      "FromObjectName": "Instruction",
+                      "FromPropertyName": "AlternatSequenceId",
+                      "ToName": "AlternatSequenceId",
+                      "ToObjectName": "Instruction",
+                      "ToPropertyName": "AlternatSequenceId",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "TEXT"
+                    }
+                  },
+                  {
+                    "Name": "AlternateRightParticipantName",
+                    "OriginalName": "AlternateRightParticipantName",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "OriginalDataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "Instruction.AlternateRightParticipantName",
+                      "FromObjectName": "Instruction",
+                      "FromPropertyName": "AlternateRightParticipantName",
+                      "ToName": "AlternateRightParticipantName",
+                      "ToObjectName": "Instruction",
+                      "ToPropertyName": "AlternateRightParticipantName",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "TEXT"
+                    }
+                  },
+                  {
+                    "Name": "ExpectedPlantText",
+                    "OriginalName": "ExpectedPlantText",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "OriginalDataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "Instruction.ExpectedPlantText",
+                      "FromObjectName": "Instruction",
+                      "FromPropertyName": "ExpectedPlantText",
+                      "ToName": "ExpectedPlantText",
+                      "ToObjectName": "Instruction",
+                      "ToPropertyName": "ExpectedPlantText",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "TEXT"
+                    }
+                  },
+                  {
+                    "Name": "LeftRightInstructionText",
+                    "OriginalName": "LeftRightInstructionText",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "OriginalDataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "Instruction.LeftRightInstructionText",
+                      "FromObjectName": "Instruction",
+                      "FromPropertyName": "LeftRightInstructionText",
+                      "ToName": "LeftRightInstructionText",
+                      "ToObjectName": "Instruction",
+                      "ToPropertyName": "LeftRightInstructionText",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "TEXT"
+                    }
+                  },
+                  {
+                    "Name": "DeclarationInstructionText",
+                    "OriginalName": "DeclarationInstructionText",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "OriginalDataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "Instruction.DeclarationInstructionText",
+                      "FromObjectName": "Instruction",
+                      "FromPropertyName": "DeclarationInstructionText",
+                      "ToName": "DeclarationInstructionText",
+                      "ToObjectName": "Instruction",
+                      "ToPropertyName": "DeclarationInstructionText",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "TEXT"
+                    }
+                  },
+                  {
+                    "Name": "SortOrder",
+                    "OriginalName": "SortOrder",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "BYTE",
+                    "OriginalDataType": "BYTE",
+                    "Length": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "Instruction.SortOrder",
+                      "FromObjectName": "Instruction",
+                      "FromPropertyName": "SortOrder",
+                      "ToName": "SortOrder",
+                      "ToObjectName": "Instruction",
+                      "ToPropertyName": "SortOrder",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "BYTE"
+                    }
+                  }
+                ]
+              },
+              "PluralName": "",
+              "MatchingMetaData": {
+                "FromName": "Instruction",
+                "FromObjectName": "Instruction",
+                "FromPropertyName": "",
+                "ToName": "Instruction",
+                "ToObjectName": "Instruction",
+                "ToPropertyName": "",
+                "Include": "true"
+              }
+            }
+          ]
+        },
+        "ComplexTypeCount": {
+          "ObjectDefs": "",
+          "PropertyDefs": ""
+        }
+      }
+    }
+  }
+}
+                    
