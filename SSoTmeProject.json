@@ -77,6 +77,28 @@
       "Name": "OdxmlToCSharpPOCOs",
       "RelativePath": "/PlantUMLDotnET/PlantUML.Lib/DataClasses",
       "CommandLine": "odxml42/odxml-to-csharp-pocos -i ..\\..\\..\\ODXML\\DataSchema.odxml"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
+        "Name": "XmlXsltTransform",
+        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."
+      },
+      "ProjectTranspilerId": "65931077-3b6e-422d-a2f2-3ee3bed447bf",
+      "Name": "XmlXsltTransform",
+      "RelativePath": "/docs/SamplePlantText",
+      "CommandLine": "codee42/xml-xslt-transform -i ..\\..\\PlantUMLSSoT\\PlantUML.xml -i CreateSamples.xslt"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "fddc44e8-1e48-49bb-b9db-56a10d39c6aa",
+        "Name": "PlantTextToPng",
+        "Description": "PlantText to Png"
+      },
+      "ProjectTranspilerId": "6fc3124c-70b7-42b3-b26d-06dd6c4f187b",
+      "Name": "PlantTextToPng",
+      "RelativePath": "/docs/SamplePlantText",
+      "CommandLine": "planttext-to-png -i .\\sample1.txt"
     }
   ]
 }

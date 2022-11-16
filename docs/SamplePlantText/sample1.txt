@@ -1,0 +1,6 @@
+@startuml
+  Standing -> Ducking : Down
+  Ducking -> Standing : Up
+  Standing -> Jumping : Up2
+  Jumping -> Diving : Down
+@enduml
