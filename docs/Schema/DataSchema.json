@@ -201,31 +201,83 @@
               "AirtableData": "",
               "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema",
               "PropertyDefs": {
-                "PropertyDef": {
-                  "Name": "Name",
-                  "OriginalName": "Name",
-                  "Description": "",
-                  "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
-                  "DataType": "TEXT",
-                  "OriginalDataType": "TEXT",
-                  "Length": "100",
-                  "IsNullable": "1",
-                  "IsPrimaryKey": "0",
-                  "IsAttribute": "0",
-                  "IsCollection": "0",
-                  "MatchingMetaData": {
-                    "FromName": "Keyword.Name",
-                    "FromObjectName": "Keyword",
-                    "FromPropertyName": "Name",
-                    "ToName": "Name",
-                    "ToObjectName": "Keyword",
-                    "ToPropertyName": "Name",
-                    "Include": "true",
-                    "IsCollection": "0",
+                "PropertyDef": [
+                  {
+                    "Name": "Name",
+                    "OriginalName": "Name",
                     "Description": "",
-                    "DataType": "TEXT"
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "OriginalDataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "Keyword.Name",
+                      "FromObjectName": "Keyword",
+                      "FromPropertyName": "Name",
+                      "ToName": "Name",
+                      "ToObjectName": "Keyword",
+                      "ToPropertyName": "Name",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "TEXT"
+                    }
+                  },
+                  {
+                    "Name": "KeywordText",
+                    "OriginalName": "KeywordText",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "OriginalDataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "Keyword.KeywordText",
+                      "FromObjectName": "Keyword",
+                      "FromPropertyName": "KeywordText",
+                      "ToName": "KeywordText",
+                      "ToObjectName": "Keyword",
+                      "ToPropertyName": "KeywordText",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "TEXT"
+                    }
+                  },
+                  {
+                    "Name": "RegEx",
+                    "OriginalName": "RegEx",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "OriginalDataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "Keyword.RegEx",
+                      "FromObjectName": "Keyword",
+                      "FromPropertyName": "RegEx",
+                      "ToName": "RegEx",
+                      "ToObjectName": "Keyword",
+                      "ToPropertyName": "RegEx",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "TEXT"
+                    }
                   }
-                }
+                ]
               },
               "PluralName": "",
               "MatchingMetaData": {
@@ -331,6 +383,153 @@
                 "FromPropertyName": "",
                 "ToName": "SequenceType",
                 "ToObjectName": "SequenceType",
+                "ToPropertyName": "",
+                "Include": "true"
+              }
+            },
+            {
+              "Name": "InstructionType",
+              "OriginalName": "InstructionType",
+              "DisplayName": "",
+              "AirtableEntity": "",
+              "AirtableData": "",
+              "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema",
+              "PropertyDefs": {
+                "PropertyDef": [
+                  {
+                    "Name": "Name",
+                    "OriginalName": "Name",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "OriginalDataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "InstructionType.Name",
+                      "FromObjectName": "InstructionType",
+                      "FromPropertyName": "Name",
+                      "ToName": "Name",
+                      "ToObjectName": "InstructionType",
+                      "ToPropertyName": "Name",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "TEXT"
+                    }
+                  },
+                  {
+                    "Name": "KeywordText",
+                    "OriginalName": "KeywordText",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "OriginalDataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "InstructionType.KeywordText",
+                      "FromObjectName": "InstructionType",
+                      "FromPropertyName": "KeywordText",
+                      "ToName": "KeywordText",
+                      "ToObjectName": "InstructionType",
+                      "ToPropertyName": "KeywordText",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "TEXT"
+                    }
+                  },
+                  {
+                    "Name": "RegEx",
+                    "OriginalName": "RegEx",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "OriginalDataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "InstructionType.RegEx",
+                      "FromObjectName": "InstructionType",
+                      "FromPropertyName": "RegEx",
+                      "ToName": "RegEx",
+                      "ToObjectName": "InstructionType",
+                      "ToPropertyName": "RegEx",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "TEXT"
+                    }
+                  },
+                  {
+                    "Name": "TargetFormatName",
+                    "OriginalName": "TargetFormatName",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "OriginalDataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "InstructionType.TargetFormatName",
+                      "FromObjectName": "InstructionType",
+                      "FromPropertyName": "TargetFormatName",
+                      "ToName": "TargetFormatName",
+                      "ToObjectName": "InstructionType",
+                      "ToPropertyName": "TargetFormatName",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "TEXT"
+                    }
+                  },
+                  {
+                    "Name": "SampleStatement",
+                    "OriginalName": "SampleStatement",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "OriginalDataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "InstructionType.SampleStatement",
+                      "FromObjectName": "InstructionType",
+                      "FromPropertyName": "SampleStatement",
+                      "ToName": "SampleStatement",
+                      "ToObjectName": "InstructionType",
+                      "ToPropertyName": "SampleStatement",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "TEXT"
+                    }
+                  }
+                ]
+              },
+              "PluralName": "",
+              "MatchingMetaData": {
+                "FromName": "InstructionType",
+                "FromObjectName": "InstructionType",
+                "FromPropertyName": "",
+                "ToName": "InstructionType",
+                "ToObjectName": "InstructionType",
                 "ToPropertyName": "",
                 "Include": "true"
               }

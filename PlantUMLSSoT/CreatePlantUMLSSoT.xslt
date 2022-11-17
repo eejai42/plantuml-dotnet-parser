@@ -40,6 +40,11 @@
             <xsl:apply-templates select="." />
         </xsl:for-each>
     </SequenceTypes>
+    <InstructionTypes>
+        <xsl:for-each select="//InstructionTypes/InstructionType"><xsl:sort select="SortOrder" data-type="number" />
+            <xsl:apply-templates select="." />
+        </xsl:for-each>
+    </InstructionTypes>
     <PlantTextFiles>
         <xsl:for-each select="//PlantTextFiles/PlantTextFile"><xsl:sort select="SortOrder" data-type="number" />
             <xsl:apply-templates select="." />
@@ -59,6 +64,8 @@
     <xsl:template mode="keyword" match="Keyword">
         <Keyword>
             <xsl:apply-templates select="Name" />
+            <xsl:apply-templates select="KeywordText" />
+            <xsl:apply-templates select="RegEx" />
         </Keyword>
     </xsl:template>
     <xsl:template match="TargetFormat">
@@ -75,6 +82,15 @@
             <xsl:apply-templates select="ReverseSequenceIdentifier" mode="escape" />
         </SequenceType>
     </xsl:template>
+    <xsl:template  match="InstructionType">
+        <InstructionType>
+            <xsl:apply-templates select="Name" />
+            <xsl:apply-templates select="KeywordText" />
+            <xsl:apply-templates select="RegEx" />
+            <xsl:apply-templates select="TargetFormatName" />
+            <xsl:apply-templates select="SampleStatement" />
+        </InstructionType>
+    </xsl:template>
 
     <xsl:template  match="PlantTextFile">
         <PlantTextFile>
@@ -83,7 +99,7 @@
             <xsl:apply-templates select="ReverseSequenceIdentifier" mode="escape" />
             <Instructions>
                 <xsl:for-each select="//Instructions/Instruction[PlantTextFile=current()/PlantTextFileId]"><xsl:sort select="SortOrder" data-type="number" />
-                    <xsl:apply-templates select="." />>
+                    <xsl:apply-templates select="." />
                 </xsl:for-each>
             </Instructions>
         </PlantTextFile>

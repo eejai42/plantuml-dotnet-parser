@@ -26,6 +26,11 @@
       <AirtableName>TargetFormats</AirtableName>
     </Entity>
     <Entity>
+      <Name>InstructionType</Name>
+      <PluralName>InstructionTypes</PluralName>
+      <AirtableName>InstructionTypes</AirtableName>
+    </Entity>
+    <Entity>
       <Name>SequenceType</Name>
       <PluralName>SequenceTypes</PluralName>
       <AirtableName>SequenceTypes</AirtableName>
@@ -35,6 +40,7 @@
     <PlantTextFile>
       <PlantTextFileId>rec3QTEv6cM2PRoy3</PlantTextFileId>
       <createdTime>2022-11-15T00:37:57Z</createdTime>
+      <PlantTextUrl>https://www.planttext.com/api/plantuml/png/JP0n3iCW301tly8VwD2aIQGELQQ-e1zm20CInIauGtvVX4F4Objt4Zen9w4e-zV3bhSpRgCWsDwKyCqCP8GZdhEWEooyXvNYWTUXfWF3GI9xh5jv3pQ8amFFfVG1Amajb2nUXveXl-EzDU8u96nlzIFyThjRrAbiWZpmzYg5-CGFQtI3EyKrkZ6zchEw4GyLsjtmGNdjRinOdxgY6paLLx9Xjc7D__y7</PlantTextUrl>
       <PlantText>@startuml
 participant participant as Foo
 actor actor as Foo1
@@ -70,6 +76,32 @@ Foo -&gt; Foo7: To queue
       <Instructions>reclN0sb9mVrtogU2</Instructions>
       <Instructions>recux4OWXSqTCOH2B</Instructions>
       <Name>sample2</Name>
+      <Diagram>
+        <DiagramId>attpCidFf3vIhlSp9</DiagramId>
+        <width>632</width>
+        <height>385</height>
+        <url>https://v5.airtableusercontent.com/v1/10/10/1668592800000/8yWB0pGQ8kHuRcmHxYyPHg/hY036FSyVv_jFDx6c5a0wP6iM3J_SU6Hq5oZLDs1uPzE-NlQfbsugLFttb-gvaiJC3EDt34XIvxwpdnuMabq1L8JfJ4ZfRpP2lSBjskc1ir-El1Xsh7rJ20cJ3Yydpj9DNphkDZznMO1TNclf6o9ZNSDN74rbxfunz_736E1R7Fs2pT_N7LsARj8nEfLW5N4Qv1nqw1FZ3Bg0E4TbzO2E3TdJThy7JoX5b1vGGMouJ-3B0_vZ1br9rSmiWflD08_lMyKXyUkRUiSYZh6mTgU-HDceNHGDhtQgZpBTFV0wcevmgCnTeU59_ejZdQ30nVb6L02VH9ujZ33eKQ7y-2ng3p8VOpPi00_PULy7daurrji1-ppjO1o_6TEEm3mQ9MY/0Az6RJ-_XW989af5iMZoolhKNI_4aeXo9nnofc-cFl0</url>
+        <filename>JP0n3iCW301tly8VwD2aIQGELQQ-e1zm20CInIauGtvVX4F4Objt4Zen9w4e-zV3bhSpRgCWsDwKyCqCP8GZdhEWEooyXvNYWTUXfWF3GI9xh5jv3pQ8amFFfVG1Amajb2nUXveXl-EzDU8u96nlzIFyThjRrAbiWZpmzYg5-CGFQtI3EyKrkZ6zchEw4GyLsjtmGNdjRinOdxgY6paLLx9Xjc7D__y7</filename>
+        <size>24967</size>
+        <type>image/png</type>
+        <thumbnails>
+          <small>
+            <url>https://v5.airtableusercontent.com/v1/10/10/1668592800000/H-xtb05aYj8TQHUyeYrtsg/cj_-CGJiNGLCb-4LHxN5czeOltZ0XoTclSOk1tQIIfKl5iuEK-i3SttZV4IxEa3cOzpzfKQZHxtTPkVFhsIGdQ/4vuKbbJ1PnRjOvIDTbjDtlhvvq8wXZFQeMO4gbyL6Aw</url>
+            <width>59</width>
+            <height>36</height>
+          </small>
+          <large>
+            <url>https://v5.airtableusercontent.com/v1/10/10/1668592800000/7V_Atjr5tm7NxJ9qGPMTzg/-rO3mut_DFetC_VCSwtDDz5Me388uT4J68s2SKb1mEgSzuDcbRmU3aGLp6w7kxYGNVWswwNbToWprkCzMFtc5A/lGt9kUZ31Gw4DJXuGQuPX88cD33Df1JF1CP1MyL2Oco</url>
+            <width>632</width>
+            <height>385</height>
+          </large>
+          <full>
+            <url>https://v5.airtableusercontent.com/v1/10/10/1668592800000/sQX2zhOBjLKrX60PKmhhUQ/ghT8J360gjTcUc7iSslY04_XIbytJLAcBNEjexELix3jCNgvIHALqIbYgN7Y7TNeADJ-ye7NNo63pKGAN8Dt3w/wjUOBt-45ruHk7YztMuNmp7DhuHBPdlVHLm8q1rluxU</url>
+            <width>3000</width>
+            <height>3000</height>
+          </full>
+        </thumbnails>
+      </Diagram>
       <InstructionText>@startuml</InstructionText>
       <InstructionText>participant participant as Foo</InstructionText>
       <InstructionText>actor actor as Foo1</InstructionText>
@@ -98,6 +130,7 @@ Foo -&gt; Foo7: To queue
     <PlantTextFile>
       <PlantTextFileId>recuhxcS02u4pGzPA</PlantTextFileId>
       <createdTime>2022-11-15T00:05:15Z</createdTime>
+      <PlantTextUrl>https://www.planttext.com/api/plantuml/png/SoWkIImgAStDuNBCoKnELT2rKt3AJx9IS2mjoKZDAybCJYp9pCzJ24ejB4qjBk42oYde0jM05MDHLLoGdrUSYcvMNZvGMP528dOp8OfjT7K9g8QQxP2Qbm9qBm00</PlantTextUrl>
       <PlantText>@startuml
 Alice -&gt; Bob: Authentication Request
 Bob --&gt; Alice: Authentication Response
@@ -109,6 +142,32 @@ Alice &lt;-- Bob: Another authentication Response
       <Instructions>recJKCPlMDzureBJi</Instructions>
       <Instructions>recjnWTXfMxIrzPuV</Instructions>
       <Name>sample1</Name>
+      <Diagram>
+        <DiagramId>attuvoirsK1hefC9A</DiagramId>
+        <width>294</width>
+        <height>207</height>
+        <url>https://v5.airtableusercontent.com/v1/10/10/1668592800000/XlU_Jj9Jlnemabzf2Y92og/O7-QeTtpVrf8DmWau_o_0cDqptnHf5C2k4QexIta73hTNFX57_Zjm-_VzvUdRIrXs0AOpGVQZNsKxBO1PsZ6AoHmwksQc6ScKJ1PqSLNdrOBnP285Shs6E_H99sHE3PbZTo_M2JbIOmBmKsZD_Igoi_MB-fOT9l-ztdy5y_9WsOqmf0Q1xCuEbqzn3E586xfc-W1k4DmmEI6Mq3VZAFhy7p3lOGv9XamkyTSaLTyytToGZJJ-tPAuWOTTcXBazni/VCEndGOeZih2JdBUIupdAwRkh9c9vJgCyOL0uv3TmJA</url>
+        <filename>SoWkIImgAStDuNBCoKnELT2rKt3AJx9IS2mjoKZDAybCJYp9pCzJ24ejB4qjBk42oYde0jM05MDHLLoGdrUSYcvMNZvGMP528dOp8OfjT7K9g8QQxP2Qbm9qBm00</filename>
+        <size>6816</size>
+        <type>image/png</type>
+        <thumbnails>
+          <small>
+            <url>https://v5.airtableusercontent.com/v1/10/10/1668592800000/zieVQcxF0CTvkqxFq5sFUQ/F365lO6Ja4ujPdIh59tQ1VztSkv9ROA9zbpbiNM7ADpkusxSPHhlwtztMB_WhFPfWYlqgQZkcaMELLoyjUKjkg/s4Md6I6vmqH5ksLVYL9qC4ns1apKHM77tcz3nizYXkU</url>
+            <width>51</width>
+            <height>36</height>
+          </small>
+          <large>
+            <url>https://v5.airtableusercontent.com/v1/10/10/1668592800000/TdCuiR6Wt6LlD2NCPeGyVQ/L36FyMvv4UWp86fSTRcbsno4NUw1Fu-mdMqs1xi8TxqufO7d1OjE25ARwl8gpnDfoUo5BKMssLUjZ3VZNbqTvw/8fE2txQKIfrnqXbln2kINZPOzQDkpS0NPXKLovIZO8s</url>
+            <width>294</width>
+            <height>207</height>
+          </large>
+          <full>
+            <url>https://v5.airtableusercontent.com/v1/10/10/1668592800000/EzqllURpfyba6Ipi_X-STA/sSZps5ya4zUXZPqAIWfdXF3CxXpFBS0aEwky6p4wP2GO5x01K6IrJLeaq5orTRH2FDKYN58LXBds38FVZkJl3A/Kpwabr9UwAqjDi5JVZBqXJv2sNatqDv263wYzbLov4M</url>
+            <width>3000</width>
+            <height>3000</height>
+          </full>
+        </thumbnails>
+      </Diagram>
       <InstructionText>Alice -&gt; Bob: Authentication Request</InstructionText>
       <InstructionText>Bob --&gt; Alice: Authentication Response</InstructionText>
       <InstructionText>Alice -&gt; Bob: Another Authentication Request</InstructionText>
@@ -121,7 +180,7 @@ Alice &lt;-- Bob: Another authentication Response
       <createdTime>2022-11-15T00:51:02Z</createdTime>
       <SequenceType>rec4yUvHjNl9hW5tb</SequenceType>
       <RightParticipant>recs43aChXMyAEnyG</RightParticipant>
-      <InstructionType>LeftRightMessage</InstructionType>
+      <InstructionType>recmycltGPSz7NW3D</InstructionType>
       <AdditionalText>To collections</AdditionalText>
       <ExplicitRightName>Foo6</ExplicitRightName>
       <PlantTextFile>rec3QTEv6cM2PRoy3</PlantTextFile>
@@ -154,13 +213,14 @@ Foo -&gt; Foo7: To queue
       <LeftRightInstructionText>Foo -&gt; Foo6: To collections</LeftRightInstructionText>
       <DeclarationInstructionText></DeclarationInstructionText>
       <RightParticipantAsName>Foo6</RightParticipantAsName>
+      <InstructionTypeName>LeftRightMessage</InstructionTypeName>
     </Instruction>
     <Instruction>
       <InstructionId>rec5axeaCwo8yCYtF</InstructionId>
       <createdTime>2022-11-15T00:51:02Z</createdTime>
       <SequenceType>rec4yUvHjNl9hW5tb</SequenceType>
       <RightParticipant>recmB4UDuRzWBKbab</RightParticipant>
-      <InstructionType>LeftRightMessage</InstructionType>
+      <InstructionType>recmycltGPSz7NW3D</InstructionType>
       <AdditionalText>To database</AdditionalText>
       <ExplicitRightName>Foo5</ExplicitRightName>
       <PlantTextFile>rec3QTEv6cM2PRoy3</PlantTextFile>
@@ -193,13 +253,14 @@ Foo -&gt; Foo7: To queue
       <LeftRightInstructionText>Foo -&gt; Foo5: To database</LeftRightInstructionText>
       <DeclarationInstructionText></DeclarationInstructionText>
       <RightParticipantAsName>Foo5</RightParticipantAsName>
+      <InstructionTypeName>LeftRightMessage</InstructionTypeName>
     </Instruction>
     <Instruction>
       <InstructionId>rec6ByAWo1YeWmxMl</InstructionId>
       <createdTime>2022-11-15T00:02:14Z</createdTime>
       <SequenceType>rec4yUvHjNl9hW5tb</SequenceType>
       <RightParticipant>recYGB7AfkUF2xnwt</RightParticipant>
-      <InstructionType>LeftRightMessage</InstructionType>
+      <InstructionType>recmycltGPSz7NW3D</InstructionType>
       <AdditionalText>Authentication Request</AdditionalText>
       <PlantTextFile>recuhxcS02u4pGzPA</PlantTextFile>
       <InstructionNumber>1</InstructionNumber>
@@ -220,13 +281,14 @@ Alice &lt;-- Bob: Another authentication Response
 @enduml</ExpectedPlantText>
       <LeftRightInstructionText>Alice -&gt; Bob: Authentication Request</LeftRightInstructionText>
       <DeclarationInstructionText></DeclarationInstructionText>
+      <InstructionTypeName>LeftRightMessage</InstructionTypeName>
     </Instruction>
     <Instruction>
       <InstructionId>recJ2cqeRukKn3TsU</InstructionId>
       <createdTime>2022-11-15T00:51:02Z</createdTime>
       <SequenceType>rec4yUvHjNl9hW5tb</SequenceType>
       <RightParticipant>recNYoh5Z7ZuMLgsm</RightParticipant>
-      <InstructionType>LeftRightMessage</InstructionType>
+      <InstructionType>recmycltGPSz7NW3D</InstructionType>
       <AdditionalText>To entity</AdditionalText>
       <ExplicitRightName>Foo4</ExplicitRightName>
       <PlantTextFile>rec3QTEv6cM2PRoy3</PlantTextFile>
@@ -259,11 +321,12 @@ Foo -&gt; Foo7: To queue
       <LeftRightInstructionText>Foo -&gt; Foo4: To entity</LeftRightInstructionText>
       <DeclarationInstructionText></DeclarationInstructionText>
       <RightParticipantAsName>Foo4</RightParticipantAsName>
+      <InstructionTypeName>LeftRightMessage</InstructionTypeName>
     </Instruction>
     <Instruction>
       <InstructionId>recJCfRGJYF4Y4gIZ</InstructionId>
       <createdTime>2022-11-15T00:50:59Z</createdTime>
-      <InstructionType>StartUML</InstructionType>
+      <InstructionType>rec2qCfVawInG48WU</InstructionType>
       <PlantTextFile>rec3QTEv6cM2PRoy3</PlantTextFile>
       <SortOrder>1</SortOrder>
       <Name>@startuml</Name>
@@ -286,13 +349,14 @@ Foo -&gt; Foo7: To queue
 @enduml</ExpectedPlantText>
       <LeftRightInstructionText>  : </LeftRightInstructionText>
       <DeclarationInstructionText></DeclarationInstructionText>
+      <InstructionTypeName>StartUML</InstructionTypeName>
     </Instruction>
     <Instruction>
       <InstructionId>recJKCPlMDzureBJi</InstructionId>
       <createdTime>2022-11-15T00:13:21Z</createdTime>
       <SequenceType>rec4yUvHjNl9hW5tb</SequenceType>
       <RightParticipant>recYGB7AfkUF2xnwt</RightParticipant>
-      <InstructionType>LeftRightMessage</InstructionType>
+      <InstructionType>recmycltGPSz7NW3D</InstructionType>
       <AdditionalText>Another Authentication Request</AdditionalText>
       <PlantTextFile>recuhxcS02u4pGzPA</PlantTextFile>
       <SortOrder>3</SortOrder>
@@ -312,11 +376,12 @@ Alice &lt;-- Bob: Another authentication Response
 @enduml</ExpectedPlantText>
       <LeftRightInstructionText>Alice -&gt; Bob: Another Authentication Request</LeftRightInstructionText>
       <DeclarationInstructionText></DeclarationInstructionText>
+      <InstructionTypeName>LeftRightMessage</InstructionTypeName>
     </Instruction>
     <Instruction>
       <InstructionId>recJuHdK2h7hyQXC8</InstructionId>
       <createdTime>2022-11-15T00:51:02Z</createdTime>
-      <InstructionType>Declaration</InstructionType>
+      <InstructionType>recbyYxbq7On2MlYv</InstructionType>
       <DeclaredName>entity</DeclaredName>
       <AsName>Foo4</AsName>
       <PlantTextFile>rec3QTEv6cM2PRoy3</PlantTextFile>
@@ -343,11 +408,12 @@ Foo -&gt; Foo7: To queue
 @enduml</ExpectedPlantText>
       <LeftRightInstructionText>  : </LeftRightInstructionText>
       <DeclarationInstructionText>entity entity as Foo4</DeclarationInstructionText>
+      <InstructionTypeName>Declaration</InstructionTypeName>
     </Instruction>
     <Instruction>
       <InstructionId>recM8NOSodLnC3fSM</InstructionId>
       <createdTime>2022-11-15T00:51:02Z</createdTime>
-      <InstructionType>Declaration</InstructionType>
+      <InstructionType>recbyYxbq7On2MlYv</InstructionType>
       <DeclaredName>database</DeclaredName>
       <AsName>Foo5</AsName>
       <PlantTextFile>rec3QTEv6cM2PRoy3</PlantTextFile>
@@ -374,11 +440,12 @@ Foo -&gt; Foo7: To queue
 @enduml</ExpectedPlantText>
       <LeftRightInstructionText>  : </LeftRightInstructionText>
       <DeclarationInstructionText>database database as Foo5</DeclarationInstructionText>
+      <InstructionTypeName>Declaration</InstructionTypeName>
     </Instruction>
     <Instruction>
       <InstructionId>recO6OZhpJOM8VIHE</InstructionId>
       <createdTime>2022-11-15T00:51:02Z</createdTime>
-      <InstructionType>Declaration</InstructionType>
+      <InstructionType>recbyYxbq7On2MlYv</InstructionType>
       <DeclaredName>boundary</DeclaredName>
       <AsName>Foo2</AsName>
       <PlantTextFile>rec3QTEv6cM2PRoy3</PlantTextFile>
@@ -405,11 +472,12 @@ Foo -&gt; Foo7: To queue
 @enduml</ExpectedPlantText>
       <LeftRightInstructionText>  : </LeftRightInstructionText>
       <DeclarationInstructionText>boundary boundary as Foo2</DeclarationInstructionText>
+      <InstructionTypeName>Declaration</InstructionTypeName>
     </Instruction>
     <Instruction>
       <InstructionId>recPw9xyw9xBKnlVL</InstructionId>
       <createdTime>2022-11-15T00:51:02Z</createdTime>
-      <InstructionType>Declaration</InstructionType>
+      <InstructionType>recbyYxbq7On2MlYv</InstructionType>
       <DeclaredName>participant</DeclaredName>
       <AsName>Foo</AsName>
       <PlantTextFile>rec3QTEv6cM2PRoy3</PlantTextFile>
@@ -436,13 +504,21 @@ Foo -&gt; Foo7: To queue
 @enduml</ExpectedPlantText>
       <LeftRightInstructionText>  : </LeftRightInstructionText>
       <DeclarationInstructionText>participant participant as Foo</DeclarationInstructionText>
+      <InstructionTypeName>Declaration</InstructionTypeName>
+    </Instruction>
+    <Instruction>
+      <InstructionId>recRGIvY1vrXWNl89</InstructionId>
+      <createdTime>2022-11-15T21:54:13Z</createdTime>
+      <Name>Unknonw message type</Name>
+      <LeftRightInstructionText>  : </LeftRightInstructionText>
+      <DeclarationInstructionText></DeclarationInstructionText>
     </Instruction>
     <Instruction>
       <InstructionId>recSyvmsL2m5xzUYi</InstructionId>
       <createdTime>2022-11-15T00:02:14Z</createdTime>
       <SequenceType>recxUD3GFnOEZOchk</SequenceType>
       <RightParticipant>recaRCOQ986leqi26</RightParticipant>
-      <InstructionType>LeftRightMessage</InstructionType>
+      <InstructionType>recmycltGPSz7NW3D</InstructionType>
       <AdditionalText>Authentication Response</AdditionalText>
       <PlantTextFile>recuhxcS02u4pGzPA</PlantTextFile>
       <SortOrder>1</SortOrder>
@@ -462,13 +538,14 @@ Alice &lt;-- Bob: Another authentication Response
 @enduml</ExpectedPlantText>
       <LeftRightInstructionText>Bob --&gt; Alice: Authentication Response</LeftRightInstructionText>
       <DeclarationInstructionText></DeclarationInstructionText>
+      <InstructionTypeName>LeftRightMessage</InstructionTypeName>
     </Instruction>
     <Instruction>
       <InstructionId>recTAr9OOPc5nd1cT</InstructionId>
       <createdTime>2022-11-15T00:51:02Z</createdTime>
       <SequenceType>rec4yUvHjNl9hW5tb</SequenceType>
       <RightParticipant>recDUw7f38cFPw3b9</RightParticipant>
-      <InstructionType>LeftRightMessage</InstructionType>
+      <InstructionType>recmycltGPSz7NW3D</InstructionType>
       <AdditionalText>To boundary</AdditionalText>
       <ExplicitRightName>Foo2</ExplicitRightName>
       <PlantTextFile>rec3QTEv6cM2PRoy3</PlantTextFile>
@@ -501,13 +578,14 @@ Foo -&gt; Foo7: To queue
       <LeftRightInstructionText>Foo -&gt; Foo2: To boundary</LeftRightInstructionText>
       <DeclarationInstructionText></DeclarationInstructionText>
       <RightParticipantAsName>Foo2</RightParticipantAsName>
+      <InstructionTypeName>LeftRightMessage</InstructionTypeName>
     </Instruction>
     <Instruction>
       <InstructionId>reciDhGSCaFZ41kvu</InstructionId>
       <createdTime>2022-11-15T00:51:02Z</createdTime>
       <SequenceType>rec4yUvHjNl9hW5tb</SequenceType>
       <RightParticipant>recNMvWPK8AW2o2ks</RightParticipant>
-      <InstructionType>LeftRightMessage</InstructionType>
+      <InstructionType>recmycltGPSz7NW3D</InstructionType>
       <AdditionalText>To control</AdditionalText>
       <ExplicitRightName>Foo3</ExplicitRightName>
       <PlantTextFile>rec3QTEv6cM2PRoy3</PlantTextFile>
@@ -540,13 +618,14 @@ Foo -&gt; Foo7: To queue
       <LeftRightInstructionText>Foo -&gt; Foo3: To control</LeftRightInstructionText>
       <DeclarationInstructionText></DeclarationInstructionText>
       <RightParticipantAsName>Foo3</RightParticipantAsName>
+      <InstructionTypeName>LeftRightMessage</InstructionTypeName>
     </Instruction>
     <Instruction>
       <InstructionId>recjnWTXfMxIrzPuV</InstructionId>
       <createdTime>2022-11-15T00:15:26Z</createdTime>
       <SequenceType>recxUD3GFnOEZOchk</SequenceType>
       <RightParticipant>recaRCOQ986leqi26</RightParticipant>
-      <InstructionType>LeftRightMessage</InstructionType>
+      <InstructionType>recmycltGPSz7NW3D</InstructionType>
       <AdditionalText>Another Authentication Response</AdditionalText>
       <PlantTextFile>recuhxcS02u4pGzPA</PlantTextFile>
       <SortOrder>4</SortOrder>
@@ -567,13 +646,14 @@ Alice &lt;-- Bob: Another authentication Response
 @enduml</ExpectedPlantText>
       <LeftRightInstructionText>Alice &lt;-- Bob: Another Authentication Response</LeftRightInstructionText>
       <DeclarationInstructionText></DeclarationInstructionText>
+      <InstructionTypeName>LeftRightMessage</InstructionTypeName>
     </Instruction>
     <Instruction>
       <InstructionId>reclN0sb9mVrtogU2</InstructionId>
       <createdTime>2022-11-15T00:51:02Z</createdTime>
       <SequenceType>rec4yUvHjNl9hW5tb</SequenceType>
       <RightParticipant>recDt9jLx5CB3Mod3</RightParticipant>
-      <InstructionType>LeftRightMessage</InstructionType>
+      <InstructionType>recmycltGPSz7NW3D</InstructionType>
       <AdditionalText>To queue</AdditionalText>
       <ExplicitRightName>Foo7</ExplicitRightName>
       <PlantTextFile>rec3QTEv6cM2PRoy3</PlantTextFile>
@@ -606,13 +686,14 @@ Foo -&gt; Foo7: To queue
       <LeftRightInstructionText>Foo -&gt; Foo7: To queue</LeftRightInstructionText>
       <DeclarationInstructionText></DeclarationInstructionText>
       <RightParticipantAsName>Foo7</RightParticipantAsName>
+      <InstructionTypeName>LeftRightMessage</InstructionTypeName>
     </Instruction>
     <Instruction>
       <InstructionId>reclsWUNqtAy8yZxD</InstructionId>
       <createdTime>2022-11-15T00:51:02Z</createdTime>
       <SequenceType>rec4yUvHjNl9hW5tb</SequenceType>
       <RightParticipant>rec0pCcbN3NqDQAQO</RightParticipant>
-      <InstructionType>LeftRightMessage</InstructionType>
+      <InstructionType>recmycltGPSz7NW3D</InstructionType>
       <AdditionalText>To actor</AdditionalText>
       <ExplicitRightName>Foo1</ExplicitRightName>
       <PlantTextFile>rec3QTEv6cM2PRoy3</PlantTextFile>
@@ -645,11 +726,12 @@ Foo -&gt; Foo7: To queue
       <LeftRightInstructionText>Foo -&gt; Foo1: To actor</LeftRightInstructionText>
       <DeclarationInstructionText></DeclarationInstructionText>
       <RightParticipantAsName>Foo1</RightParticipantAsName>
+      <InstructionTypeName>LeftRightMessage</InstructionTypeName>
     </Instruction>
     <Instruction>
       <InstructionId>recpWvVuksBQYqKG6</InstructionId>
       <createdTime>2022-11-15T00:51:02Z</createdTime>
-      <InstructionType>Declaration</InstructionType>
+      <InstructionType>recbyYxbq7On2MlYv</InstructionType>
       <DeclaredName>control</DeclaredName>
       <AsName>Foo3</AsName>
       <PlantTextFile>rec3QTEv6cM2PRoy3</PlantTextFile>
@@ -676,11 +758,12 @@ Foo -&gt; Foo7: To queue
 @enduml</ExpectedPlantText>
       <LeftRightInstructionText>  : </LeftRightInstructionText>
       <DeclarationInstructionText>control control as Foo3</DeclarationInstructionText>
+      <InstructionTypeName>Declaration</InstructionTypeName>
     </Instruction>
     <Instruction>
       <InstructionId>recrIdCHxedAtV3SU</InstructionId>
       <createdTime>2022-11-15T00:51:02Z</createdTime>
-      <InstructionType>Declaration</InstructionType>
+      <InstructionType>recbyYxbq7On2MlYv</InstructionType>
       <DeclaredName>collections</DeclaredName>
       <AsName>Foo6</AsName>
       <PlantTextFile>rec3QTEv6cM2PRoy3</PlantTextFile>
@@ -707,11 +790,12 @@ Foo -&gt; Foo7: To queue
 @enduml</ExpectedPlantText>
       <LeftRightInstructionText>  : </LeftRightInstructionText>
       <DeclarationInstructionText>collections collections as Foo6</DeclarationInstructionText>
+      <InstructionTypeName>Declaration</InstructionTypeName>
     </Instruction>
     <Instruction>
       <InstructionId>recux4OWXSqTCOH2B</InstructionId>
       <createdTime>2022-11-15T00:51:02Z</createdTime>
-      <InstructionType>EndUML</InstructionType>
+      <InstructionType>recmaLIPTl2qwjOb6</InstructionType>
       <PlantTextFile>rec3QTEv6cM2PRoy3</PlantTextFile>
       <SortOrder>17</SortOrder>
       <Name>@enduml</Name>
@@ -734,11 +818,12 @@ Foo -&gt; Foo7: To queue
 @enduml</ExpectedPlantText>
       <LeftRightInstructionText>  : </LeftRightInstructionText>
       <DeclarationInstructionText></DeclarationInstructionText>
+      <InstructionTypeName>EndUML</InstructionTypeName>
     </Instruction>
     <Instruction>
       <InstructionId>recv1dP1LGJlST1zX</InstructionId>
       <createdTime>2022-11-15T00:51:02Z</createdTime>
-      <InstructionType>Declaration</InstructionType>
+      <InstructionType>recbyYxbq7On2MlYv</InstructionType>
       <DeclaredName>actor</DeclaredName>
       <AsName>Foo1</AsName>
       <PlantTextFile>rec3QTEv6cM2PRoy3</PlantTextFile>
@@ -765,11 +850,12 @@ Foo -&gt; Foo7: To queue
 @enduml</ExpectedPlantText>
       <LeftRightInstructionText>  : </LeftRightInstructionText>
       <DeclarationInstructionText>actor actor as Foo1</DeclarationInstructionText>
+      <InstructionTypeName>Declaration</InstructionTypeName>
     </Instruction>
     <Instruction>
       <InstructionId>recwdbSzVRQdm3dVc</InstructionId>
       <createdTime>2022-11-15T00:51:02Z</createdTime>
-      <InstructionType>Declaration</InstructionType>
+      <InstructionType>recbyYxbq7On2MlYv</InstructionType>
       <DeclaredName>queue</DeclaredName>
       <AsName>Foo7</AsName>
       <PlantTextFile>rec3QTEv6cM2PRoy3</PlantTextFile>
@@ -796,12 +882,13 @@ Foo -&gt; Foo7: To queue
 @enduml</ExpectedPlantText>
       <LeftRightInstructionText>  : </LeftRightInstructionText>
       <DeclarationInstructionText>queue queue as Foo7</DeclarationInstructionText>
+      <InstructionTypeName>Declaration</InstructionTypeName>
     </Instruction>
     <Instruction>
       <InstructionId>recyXj0KB6xdrxrmA</InstructionId>
       <createdTime>2022-11-15T00:54:56Z</createdTime>
       <Color>Red</Color>
-      <InstructionType>Declaration</InstructionType>
+      <InstructionType>recbyYxbq7On2MlYv</InstructionType>
       <DeclaredName>Bob</DeclaredName>
       <PlantTextFile>recQl1ixWyKfcXflN</PlantTextFile>
       <ParticipantType>recKmYX1316fOnSqq</ParticipantType>
@@ -809,6 +896,7 @@ Foo -&gt; Foo7: To queue
       <Name>actor Bob #Red</Name>
       <LeftRightInstructionText>  : </LeftRightInstructionText>
       <DeclarationInstructionText>actor Bob #Red</DeclarationInstructionText>
+      <InstructionTypeName>Declaration</InstructionTypeName>
     </Instruction>
   </Instructions>
   <Participants>
@@ -909,247 +997,389 @@ Foo -&gt; Foo7: To queue
   </Participants>
   <Keywords>
     <Keyword>
+      <KeywordId>rec38mr0zZKe2K8Ub</KeywordId>
+      <createdTime>2022-11-15T21:58:00Z</createdTime>
+      <KeywordType>Keyword</KeywordType>
+      <KeywordText>title</KeywordText>
+      <InstructionTypes>receOV79on2gosOB1</InstructionTypes>
+      <Name>title</Name>
+      <RegEx>title</RegEx>
+    </Keyword>
+    <Keyword>
+      <KeywordId>rec5YpbcTyUWHqc1s</KeywordId>
+      <createdTime>2022-11-15T21:58:00Z</createdTime>
+      <KeywordType>Keyword</KeywordType>
+      <KeywordText>stop</KeywordText>
+      <InstructionTypes>rect6SuWZZnTwjtrQ</InstructionTypes>
+      <Name>stop</Name>
+      <RegEx>stop</RegEx>
+    </Keyword>
+    <Keyword>
+      <KeywordId>rec66vTAOjuHAeBMI</KeywordId>
+      <createdTime>2022-11-15T21:57:53Z</createdTime>
+      <KeywordType>Keyword</KeywordType>
+      <KeywordText>start</KeywordText>
+      <InstructionTypes>recDw6yzfVrDClqVy</InstructionTypes>
+      <Name>start</Name>
+      <RegEx>start</RegEx>
+    </Keyword>
+    <Keyword>
       <KeywordId>rec6U3Ij06o5Uv2wz</KeywordId>
       <createdTime>2022-11-15T00:18:20Z</createdTime>
       <KeywordType>ParticipantType</KeywordType>
+      <KeywordText>entity</KeywordText>
       <Instructions>recJuHdK2h7hyQXC8</Instructions>
-      <Name>entity</Name>
       <SortOrder>5</SortOrder>
+      <Name>entity</Name>
     </Keyword>
     <Keyword>
       <KeywordId>recJI3agiPtBVv5Te</KeywordId>
       <createdTime>2022-11-15T00:23:28Z</createdTime>
       <KeywordType>Keyword</KeywordType>
-      <Name>@enduml</Name>
+      <KeywordText>@enduml</KeywordText>
+      <InstructionTypes>recmaLIPTl2qwjOb6</InstructionTypes>
+      <Name>enduml</Name>
+      <RegEx>@enduml</RegEx>
     </Keyword>
     <Keyword>
       <KeywordId>recKmYX1316fOnSqq</KeywordId>
       <createdTime>2022-11-15T00:17:45Z</createdTime>
       <KeywordType>ParticipantType</KeywordType>
+      <KeywordText>actor</KeywordText>
       <Instructions>recv1dP1LGJlST1zX</Instructions>
       <Instructions>recyXj0KB6xdrxrmA</Instructions>
-      <Name>actor</Name>
       <SortOrder>2</SortOrder>
+      <Name>actor</Name>
     </Keyword>
     <Keyword>
       <KeywordId>recPCUuytMZrBr2Ir</KeywordId>
       <createdTime>2022-11-15T00:17:45Z</createdTime>
       <KeywordType>ParticipantType</KeywordType>
+      <KeywordText>participant</KeywordText>
       <Instructions>recPw9xyw9xBKnlVL</Instructions>
-      <Name>participant</Name>
       <SortOrder>1</SortOrder>
+      <Name>participant</Name>
     </Keyword>
     <Keyword>
       <KeywordId>recaypQZMqaXXkm7e</KeywordId>
       <createdTime>2022-11-15T00:18:20Z</createdTime>
       <KeywordType>ParticipantType</KeywordType>
+      <KeywordText>control</KeywordText>
       <Instructions>recpWvVuksBQYqKG6</Instructions>
-      <Name>control</Name>
       <SortOrder>4</SortOrder>
+      <Name>control</Name>
     </Keyword>
     <Keyword>
       <KeywordId>reciwJIJPozMw9lVN</KeywordId>
       <createdTime>2022-11-15T00:18:35Z</createdTime>
       <KeywordType>Keyword</KeywordType>
+      <KeywordText>as</KeywordText>
+      <InstructionTypes>rec4hVxyrDF7TlLXj</InstructionTypes>
       <Name>as</Name>
+      <RegEx>as</RegEx>
     </Keyword>
     <Keyword>
       <KeywordId>reckgxUmDpKbvuBbB</KeywordId>
       <createdTime>2022-11-15T00:17:45Z</createdTime>
       <KeywordType>ParticipantType</KeywordType>
+      <KeywordText>boundary</KeywordText>
       <Instructions>recO6OZhpJOM8VIHE</Instructions>
-      <Name>boundary</Name>
       <SortOrder>3</SortOrder>
+      <Name>boundary</Name>
     </Keyword>
     <Keyword>
       <KeywordId>recp2orDzEmjvgNdn</KeywordId>
       <createdTime>2022-11-15T00:18:20Z</createdTime>
       <KeywordType>ParticipantType</KeywordType>
+      <KeywordText>database</KeywordText>
       <Instructions>recM8NOSodLnC3fSM</Instructions>
-      <Name>database</Name>
       <SortOrder>6</SortOrder>
+      <Name>database</Name>
     </Keyword>
     <Keyword>
       <KeywordId>recs5qGUcIWpJOMyz</KeywordId>
       <createdTime>2022-11-15T00:18:20Z</createdTime>
       <KeywordType>ParticipantType</KeywordType>
+      <KeywordText>collections</KeywordText>
       <Instructions>recrIdCHxedAtV3SU</Instructions>
-      <Name>collections</Name>
       <SortOrder>7</SortOrder>
+      <Name>collections</Name>
     </Keyword>
     <Keyword>
       <KeywordId>reczJsbBE9jmSGXgi</KeywordId>
       <createdTime>2022-11-15T00:18:20Z</createdTime>
       <KeywordType>ParticipantType</KeywordType>
+      <KeywordText>queue</KeywordText>
       <Instructions>recwdbSzVRQdm3dVc</Instructions>
-      <Name>queue</Name>
       <SortOrder>8</SortOrder>
+      <Name>queue</Name>
     </Keyword>
     <Keyword>
       <KeywordId>reczNtgdqKqjrUSdr</KeywordId>
       <createdTime>2022-11-15T00:23:21Z</createdTime>
       <KeywordType>Keyword</KeywordType>
-      <Name>@startuml</Name>
+      <KeywordText>@startuml</KeywordText>
+      <InstructionTypes>rec2qCfVawInG48WU</InstructionTypes>
+      <Name>startuml</Name>
+      <RegEx>@startuml</RegEx>
     </Keyword>
   </Keywords>
   <TargetFormats>
     <TargetFormat>
       <TargetFormatId>rec2RqMlLFhD1SmvP</TargetFormatId>
       <createdTime>2022-11-14T23:58:41Z</createdTime>
+      <SortOrder>4</SortOrder>
       <IsUMLDiagram>true</IsUMLDiagram>
       <DisplayName>Object Diagram</DisplayName>
       <Name>ObjectDiagram</Name>
-      <SortOrder>4</SortOrder>
     </TargetFormat>
     <TargetFormat>
       <TargetFormatId>rec2TvDOX5t7T3HOV</TargetFormatId>
       <createdTime>2022-11-14T23:56:54Z</createdTime>
+      <SortOrder>3</SortOrder>
       <IsUMLDiagram>true</IsUMLDiagram>
       <DisplayName>Class Diagram</DisplayName>
       <Name>ClassDiagram</Name>
-      <SortOrder>3</SortOrder>
     </TargetFormat>
     <TargetFormat>
       <TargetFormatId>rec32uDcaRLlarQBo</TargetFormatId>
       <createdTime>2022-11-14T23:59:42Z</createdTime>
+      <SortOrder>15</SortOrder>
       <DisplayName>Specification and Description Language SDL</DisplayName>
       <Name>SpecificationandDescriptionLanguageSDL</Name>
-      <SortOrder>15</SortOrder>
     </TargetFormat>
     <TargetFormat>
       <TargetFormatId>rec6MygXhjFuKmP2e</TargetFormatId>
       <createdTime>2022-11-14T23:59:42Z</createdTime>
+      <SortOrder>20</SortOrder>
       <DisplayName>Mathematic with AsciiMath or JLaTeXMath notation</DisplayName>
       <Name>MathematicwithAsciiMathorJLaTeXMathnotation</Name>
-      <SortOrder>20</SortOrder>
     </TargetFormat>
     <TargetFormat>
       <TargetFormatId>rec7sbZwAMZXiSJMa</TargetFormatId>
       <createdTime>2022-11-14T23:59:42Z</createdTime>
+      <SortOrder>17</SortOrder>
       <DisplayName>Gantt Diagram</DisplayName>
       <Name>GanttDiagram</Name>
-      <SortOrder>17</SortOrder>
     </TargetFormat>
     <TargetFormat>
       <TargetFormatId>recFpdlGq2s8wXiL7</TargetFormatId>
       <createdTime>2022-11-14T23:56:54Z</createdTime>
+      <SortOrder>1</SortOrder>
       <IsUMLDiagram>true</IsUMLDiagram>
+      <InstructionTypes>rec2qCfVawInG48WU</InstructionTypes>
+      <InstructionTypes>recmaLIPTl2qwjOb6</InstructionTypes>
       <DisplayName>Sequence Diagram</DisplayName>
       <Name>SequenceDiagram</Name>
-      <SortOrder>1</SortOrder>
     </TargetFormat>
     <TargetFormat>
       <TargetFormatId>recHkWRQOC6KTMuR0</TargetFormatId>
       <createdTime>2022-11-14T23:59:42Z</createdTime>
+      <SortOrder>12</SortOrder>
       <DisplayName>Network Diagram NWDIAG</DisplayName>
       <Name>NetworkDiagramNWDIAG</Name>
-      <SortOrder>12</SortOrder>
     </TargetFormat>
     <TargetFormat>
       <TargetFormatId>recSKG8ve5DPFTo7e</TargetFormatId>
       <createdTime>2022-11-14T23:59:42Z</createdTime>
+      <SortOrder>11</SortOrder>
       <DisplayName>YAML Data</DisplayName>
       <Name>YAMLData</Name>
-      <SortOrder>11</SortOrder>
     </TargetFormat>
     <TargetFormat>
       <TargetFormatId>recSusuhwcbx1Z0wS</TargetFormatId>
       <createdTime>2022-11-14T23:59:42Z</createdTime>
+      <SortOrder>13</SortOrder>
       <DisplayName>Wireframe graphical interface</DisplayName>
       <Name>Wireframegraphicalinterface</Name>
-      <SortOrder>13</SortOrder>
     </TargetFormat>
     <TargetFormat>
       <TargetFormatId>recTabqNs6DzeSZvM</TargetFormatId>
       <createdTime>2022-11-14T23:59:42Z</createdTime>
+      <SortOrder>16</SortOrder>
       <DisplayName>Ditaa Diagram</DisplayName>
       <Name>DitaaDiagram</Name>
-      <SortOrder>16</SortOrder>
     </TargetFormat>
     <TargetFormat>
       <TargetFormatId>recTbeJ24k95LERpg</TargetFormatId>
       <createdTime>2022-11-14T23:59:42Z</createdTime>
+      <SortOrder>19</SortOrder>
       <DisplayName>Work Breakdown Structure Diagram</DisplayName>
       <Name>WorkBreakdownStructureDiagram</Name>
-      <SortOrder>19</SortOrder>
     </TargetFormat>
     <TargetFormat>
       <TargetFormatId>recWLtqoU5loYAIwM</TargetFormatId>
       <createdTime>2022-11-14T23:58:41Z</createdTime>
+      <SortOrder>9</SortOrder>
       <IsUMLDiagram>true</IsUMLDiagram>
       <DisplayName>Timing Diagram</DisplayName>
       <Name>TimingDiagram</Name>
-      <SortOrder>9</SortOrder>
     </TargetFormat>
     <TargetFormat>
       <TargetFormatId>recZAy09ZkwAOuVrX</TargetFormatId>
       <createdTime>2022-11-14T23:58:41Z</createdTime>
+      <SortOrder>5</SortOrder>
       <IsUMLDiagram>true</IsUMLDiagram>
       <DisplayName>Activity Diagram</DisplayName>
       <Name>ActivityDiagram</Name>
-      <SortOrder>5</SortOrder>
     </TargetFormat>
     <TargetFormat>
       <TargetFormatId>recbH1PvNgH0zreLI</TargetFormatId>
       <createdTime>2022-11-14T23:59:42Z</createdTime>
+      <SortOrder>21</SortOrder>
       <DisplayName>Entity Relationship Diagram</DisplayName>
       <Name>EntityRelationshipDiagram</Name>
-      <SortOrder>21</SortOrder>
     </TargetFormat>
     <TargetFormat>
       <TargetFormatId>recbOPrwHN36dn8Pi</TargetFormatId>
       <createdTime>2022-11-14T23:58:41Z</createdTime>
+      <SortOrder>7</SortOrder>
       <IsUMLDiagram>true</IsUMLDiagram>
       <DisplayName>Deployment Diagram</DisplayName>
       <Name>DeploymentDiagram</Name>
-      <SortOrder>7</SortOrder>
     </TargetFormat>
     <TargetFormat>
       <TargetFormatId>reciUovfesuegOhgo</TargetFormatId>
       <createdTime>2022-11-14T23:58:41Z</createdTime>
+      <SortOrder>6</SortOrder>
       <IsUMLDiagram>true</IsUMLDiagram>
       <DisplayName>Component Diagram</DisplayName>
       <Name>ComponentDiagram</Name>
-      <SortOrder>6</SortOrder>
     </TargetFormat>
     <TargetFormat>
       <TargetFormatId>recktElglUpXgyGIY</TargetFormatId>
       <createdTime>2022-11-14T23:59:42Z</createdTime>
+      <SortOrder>14</SortOrder>
       <DisplayName>Archimate Diagram</DisplayName>
       <Name>ArchimateDiagram</Name>
-      <SortOrder>14</SortOrder>
     </TargetFormat>
     <TargetFormat>
       <TargetFormatId>recnQejp4T17QE9BH</TargetFormatId>
       <createdTime>2022-11-14T23:56:54Z</createdTime>
+      <SortOrder>2</SortOrder>
       <IsUMLDiagram>true</IsUMLDiagram>
       <DisplayName>Usecase Diagram</DisplayName>
       <Name>UsecaseDiagram</Name>
-      <SortOrder>2</SortOrder>
     </TargetFormat>
     <TargetFormat>
       <TargetFormatId>recpeIm4dBJu1mJcx</TargetFormatId>
       <createdTime>2022-11-14T23:58:41Z</createdTime>
+      <SortOrder>8</SortOrder>
       <IsUMLDiagram>true</IsUMLDiagram>
       <DisplayName>State Diagram</DisplayName>
       <Name>StateDiagram</Name>
-      <SortOrder>8</SortOrder>
     </TargetFormat>
     <TargetFormat>
       <TargetFormatId>recq7xCEDHPXV0dj4</TargetFormatId>
       <createdTime>2022-11-14T23:58:52Z</createdTime>
+      <SortOrder>10</SortOrder>
       <DisplayName>JSON Data</DisplayName>
       <Name>JSONData</Name>
-      <SortOrder>10</SortOrder>
     </TargetFormat>
     <TargetFormat>
       <TargetFormatId>rectXRzptpuI6bocV</TargetFormatId>
       <createdTime>2022-11-14T23:59:42Z</createdTime>
+      <SortOrder>18</SortOrder>
       <DisplayName>MindMap Diagram</DisplayName>
       <Name>MindMapDiagram</Name>
-      <SortOrder>18</SortOrder>
     </TargetFormat>
   </TargetFormats>
+  <InstructionTypes>
+    <InstructionType>
+      <InstructionTypeId>rec2qCfVawInG48WU</InstructionTypeId>
+      <createdTime>2022-11-15T10:26:16Z</createdTime>
+      <Name>StartUML</Name>
+      <Instructions>recJCfRGJYF4Y4gIZ</Instructions>
+      <Keyword>reczNtgdqKqjrUSdr</Keyword>
+      <SampleStatement>@startuml</SampleStatement>
+      <TargetFormat>recFpdlGq2s8wXiL7</TargetFormat>
+      <RegEx>@startuml</RegEx>
+      <KeywordText>@startuml</KeywordText>
+      <TargetFormatName>SequenceDiagram</TargetFormatName>
+    </InstructionType>
+    <InstructionType>
+      <InstructionTypeId>rec4hVxyrDF7TlLXj</InstructionTypeId>
+      <createdTime>2022-11-16T06:42:22Z</createdTime>
+      <Name>As</Name>
+      <Keyword>reciwJIJPozMw9lVN</Keyword>
+      <SampleStatement>as</SampleStatement>
+      <RegEx>as</RegEx>
+      <KeywordText>as</KeywordText>
+    </InstructionType>
+    <InstructionType>
+      <InstructionTypeId>recDw6yzfVrDClqVy</InstructionTypeId>
+      <createdTime>2022-11-15T21:54:06Z</createdTime>
+      <Name>Start</Name>
+      <Keyword>rec66vTAOjuHAeBMI</Keyword>
+      <SampleStatement>start</SampleStatement>
+      <RegEx>start</RegEx>
+      <KeywordText>start</KeywordText>
+    </InstructionType>
+    <InstructionType>
+      <InstructionTypeId>recbyYxbq7On2MlYv</InstructionTypeId>
+      <createdTime>2022-11-15T10:26:16Z</createdTime>
+      <Name>Declaration</Name>
+      <Instructions>recPw9xyw9xBKnlVL</Instructions>
+      <Instructions>recv1dP1LGJlST1zX</Instructions>
+      <Instructions>recO6OZhpJOM8VIHE</Instructions>
+      <Instructions>recpWvVuksBQYqKG6</Instructions>
+      <Instructions>recJuHdK2h7hyQXC8</Instructions>
+      <Instructions>recM8NOSodLnC3fSM</Instructions>
+      <Instructions>recrIdCHxedAtV3SU</Instructions>
+      <Instructions>recwdbSzVRQdm3dVc</Instructions>
+      <Instructions>recyXj0KB6xdrxrmA</Instructions>
+      <SampleStatement>participant participant as Foo #red</SampleStatement>
+      <RegEx>(participant|actor)(.*)( as )(.*)</RegEx>
+    </InstructionType>
+    <InstructionType>
+      <InstructionTypeId>receOV79on2gosOB1</InstructionTypeId>
+      <createdTime>2022-11-16T06:42:07Z</createdTime>
+      <Name>Title</Name>
+      <Keyword>rec38mr0zZKe2K8Ub</Keyword>
+      <SampleStatement>title This is a title</SampleStatement>
+      <RegEx>title</RegEx>
+      <KeywordText>title</KeywordText>
+    </InstructionType>
+    <InstructionType>
+      <InstructionTypeId>recmaLIPTl2qwjOb6</InstructionTypeId>
+      <createdTime>2022-11-15T10:26:16Z</createdTime>
+      <Name>EndUML</Name>
+      <Instructions>recux4OWXSqTCOH2B</Instructions>
+      <Keyword>recJI3agiPtBVv5Te</Keyword>
+      <SampleStatement>@enduml</SampleStatement>
+      <TargetFormat>recFpdlGq2s8wXiL7</TargetFormat>
+      <RegEx>@enduml</RegEx>
+      <KeywordText>@enduml</KeywordText>
+      <TargetFormatName>SequenceDiagram</TargetFormatName>
+    </InstructionType>
+    <InstructionType>
+      <InstructionTypeId>recmycltGPSz7NW3D</InstructionTypeId>
+      <createdTime>2022-11-15T10:26:16Z</createdTime>
+      <Name>LeftRightMessage</Name>
+      <Instructions>rec6ByAWo1YeWmxMl</Instructions>
+      <Instructions>recSyvmsL2m5xzUYi</Instructions>
+      <Instructions>recJKCPlMDzureBJi</Instructions>
+      <Instructions>recjnWTXfMxIrzPuV</Instructions>
+      <Instructions>reclsWUNqtAy8yZxD</Instructions>
+      <Instructions>recTAr9OOPc5nd1cT</Instructions>
+      <Instructions>reciDhGSCaFZ41kvu</Instructions>
+      <Instructions>recJ2cqeRukKn3TsU</Instructions>
+      <Instructions>rec5axeaCwo8yCYtF</Instructions>
+      <Instructions>rec0KSi29u7NIqdKr</Instructions>
+      <Instructions>reclN0sb9mVrtogU2</Instructions>
+      <SampleStatement>Bob --&gt; Alice: Authentication Response</SampleStatement>
+      <RegEx>(.*)(-&gt;)(.*)(:)(.*)</RegEx>
+    </InstructionType>
+    <InstructionType>
+      <InstructionTypeId>rect6SuWZZnTwjtrQ</InstructionTypeId>
+      <createdTime>2022-11-15T21:54:21Z</createdTime>
+      <Name>Stop</Name>
+      <Keyword>rec5YpbcTyUWHqc1s</Keyword>
+      <SampleStatement>stop</SampleStatement>
+      <RegEx>stop</RegEx>
+      <KeywordText>stop</KeywordText>
+    </InstructionType>
+  </InstructionTypes>
   <SequenceTypes>
     <SequenceType>
       <SequenceTypeId>rec4yUvHjNl9hW5tb</SequenceTypeId>

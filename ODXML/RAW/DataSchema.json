@@ -1,0 +1,1071 @@
+
+{
+  "Ontology": {
+    "OntologyGroups": {
+      "OntologyGroup": {
+        "Name": "ODXMLSchema",
+        "Namespace": "com.anabstractlevel.Schemas",
+        "ObjectDefs": {
+          "ObjectDef": [
+            {
+              "Name": "PlantUML",
+              "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema",
+              "PropertyDefs": {
+                "PropertyDef": {
+                  "Name": "__PlantUMLId",
+                  "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                  "DefaultValue": "(newid()))",
+                  "DataType": "GUID",
+                  "IsPrimaryKey": "1",
+                  "IsAttribute": "0"
+                }
+              }
+            },
+            {
+              "Name": "ParticipantTypes",
+              "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema",
+              "PropertyDefs": {
+                "PropertyDef": [
+                  {
+                    "Name": "__ParticipantTypesId",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DefaultValue": "(newid()))",
+                    "DataType": "GUID",
+                    "IsPrimaryKey": "1",
+                    "IsAttribute": "0"
+                  },
+                  {
+                    "Name": "__PlantUML",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "GUID",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsCollection": "0",
+                    "Relationships": {
+                      "Relationship": {
+                        "KeyName": "FK_PlantUML___PlantUMLId",
+                        "ReferencedObjectDef": "PlantUML",
+                        "ReferencedPropertyDef": "__PlantUMLId"
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "Name": "ParticipantType",
+              "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema",
+              "PropertyDefs": {
+                "PropertyDef": [
+                  {
+                    "Name": "__ParticipantTypeId",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DefaultValue": "(newid()))",
+                    "DataType": "GUID",
+                    "IsPrimaryKey": "1",
+                    "IsAttribute": "0"
+                  },
+                  {
+                    "Name": "Name",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "__ParticipantTypes",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "GUID",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsCollection": "1",
+                    "Relationships": {
+                      "Relationship": {
+                        "KeyName": "FK_ParticipantTypes___ParticipantTypesId",
+                        "ReferencedObjectDef": "ParticipantTypes",
+                        "ReferencedPropertyDef": "__ParticipantTypesId"
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "Name": "Keywords",
+              "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema",
+              "PropertyDefs": {
+                "PropertyDef": [
+                  {
+                    "Name": "__KeywordsId",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DefaultValue": "(newid()))",
+                    "DataType": "GUID",
+                    "IsPrimaryKey": "1",
+                    "IsAttribute": "0"
+                  },
+                  {
+                    "Name": "__PlantUML",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "GUID",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsCollection": "1",
+                    "Relationships": {
+                      "Relationship": {
+                        "KeyName": "FK_PlantUML___PlantUMLId",
+                        "ReferencedObjectDef": "PlantUML",
+                        "ReferencedPropertyDef": "__PlantUMLId"
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "Name": "TargetFormat",
+              "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema",
+              "PropertyDefs": {
+                "PropertyDef": [
+                  {
+                    "Name": "__TargetFormatId",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DefaultValue": "(newid()))",
+                    "DataType": "GUID",
+                    "IsPrimaryKey": "1",
+                    "IsAttribute": "0"
+                  },
+                  {
+                    "Name": "Name",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "DisplayName",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "IsUMLDiagram",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "BOOLEAN",
+                    "Length": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "__Keywords",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "GUID",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsCollection": "1",
+                    "Relationships": {
+                      "Relationship": {
+                        "KeyName": "FK_Keywords___KeywordsId",
+                        "ReferencedObjectDef": "Keywords",
+                        "ReferencedPropertyDef": "__KeywordsId"
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "Name": "Keyword",
+              "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema",
+              "PropertyDefs": {
+                "PropertyDef": [
+                  {
+                    "Name": "__KeywordId",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DefaultValue": "(newid()))",
+                    "DataType": "GUID",
+                    "IsPrimaryKey": "1",
+                    "IsAttribute": "0"
+                  },
+                  {
+                    "Name": "Name",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "KeywordText",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "RegEx",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "__Keywords",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "GUID",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsCollection": "1",
+                    "Relationships": {
+                      "Relationship": {
+                        "KeyName": "FK_Keywords___KeywordsId",
+                        "ReferencedObjectDef": "Keywords",
+                        "ReferencedPropertyDef": "__KeywordsId"
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "Name": "SequenceTypes",
+              "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema",
+              "PropertyDefs": {
+                "PropertyDef": [
+                  {
+                    "Name": "__SequenceTypesId",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DefaultValue": "(newid()))",
+                    "DataType": "GUID",
+                    "IsPrimaryKey": "1",
+                    "IsAttribute": "0"
+                  },
+                  {
+                    "Name": "__PlantUML",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "GUID",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsCollection": "0",
+                    "Relationships": {
+                      "Relationship": {
+                        "KeyName": "FK_PlantUML___PlantUMLId",
+                        "ReferencedObjectDef": "PlantUML",
+                        "ReferencedPropertyDef": "__PlantUMLId"
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "Name": "SequenceType",
+              "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema",
+              "PropertyDefs": {
+                "PropertyDef": [
+                  {
+                    "Name": "__SequenceTypeId",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DefaultValue": "(newid()))",
+                    "DataType": "GUID",
+                    "IsPrimaryKey": "1",
+                    "IsAttribute": "0"
+                  },
+                  {
+                    "Name": "Name",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "SequenceIdentifier",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "ReverseSequenceIdentifier",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "__SequenceTypes",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "GUID",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsCollection": "1",
+                    "Relationships": {
+                      "Relationship": {
+                        "KeyName": "FK_SequenceTypes___SequenceTypesId",
+                        "ReferencedObjectDef": "SequenceTypes",
+                        "ReferencedPropertyDef": "__SequenceTypesId"
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "Name": "InstructionTypes",
+              "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema",
+              "PropertyDefs": {
+                "PropertyDef": [
+                  {
+                    "Name": "__InstructionTypesId",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DefaultValue": "(newid()))",
+                    "DataType": "GUID",
+                    "IsPrimaryKey": "1",
+                    "IsAttribute": "0"
+                  },
+                  {
+                    "Name": "__PlantUML",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "GUID",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsCollection": "0",
+                    "Relationships": {
+                      "Relationship": {
+                        "KeyName": "FK_PlantUML___PlantUMLId",
+                        "ReferencedObjectDef": "PlantUML",
+                        "ReferencedPropertyDef": "__PlantUMLId"
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "Name": "InstructionType",
+              "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema",
+              "PropertyDefs": {
+                "PropertyDef": [
+                  {
+                    "Name": "__InstructionTypeId",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DefaultValue": "(newid()))",
+                    "DataType": "GUID",
+                    "IsPrimaryKey": "1",
+                    "IsAttribute": "0"
+                  },
+                  {
+                    "Name": "Name",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "KeywordText",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "RegEx",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "TargetFormatName",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "SampleStatement",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "__InstructionTypes",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "GUID",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsCollection": "1",
+                    "Relationships": {
+                      "Relationship": {
+                        "KeyName": "FK_InstructionTypes___InstructionTypesId",
+                        "ReferencedObjectDef": "InstructionTypes",
+                        "ReferencedPropertyDef": "__InstructionTypesId"
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "Name": "PlantTextFiles",
+              "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema",
+              "PropertyDefs": {
+                "PropertyDef": [
+                  {
+                    "Name": "__PlantTextFilesId",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DefaultValue": "(newid()))",
+                    "DataType": "GUID",
+                    "IsPrimaryKey": "1",
+                    "IsAttribute": "0"
+                  },
+                  {
+                    "Name": "__PlantUML",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "GUID",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsCollection": "0",
+                    "Relationships": {
+                      "Relationship": {
+                        "KeyName": "FK_PlantUML___PlantUMLId",
+                        "ReferencedObjectDef": "PlantUML",
+                        "ReferencedPropertyDef": "__PlantUMLId"
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "Name": "PlantTextFile",
+              "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema",
+              "PropertyDefs": {
+                "PropertyDef": [
+                  {
+                    "Name": "__PlantTextFileId",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DefaultValue": "(newid()))",
+                    "DataType": "GUID",
+                    "IsPrimaryKey": "1",
+                    "IsAttribute": "0"
+                  },
+                  {
+                    "Name": "Name",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "PlantText",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "__PlantTextFiles",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "GUID",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsCollection": "1",
+                    "Relationships": {
+                      "Relationship": {
+                        "KeyName": "FK_PlantTextFiles___PlantTextFilesId",
+                        "ReferencedObjectDef": "PlantTextFiles",
+                        "ReferencedPropertyDef": "__PlantTextFilesId"
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "Name": "Instructions",
+              "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema",
+              "PropertyDefs": {
+                "PropertyDef": [
+                  {
+                    "Name": "__InstructionsId",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DefaultValue": "(newid()))",
+                    "DataType": "GUID",
+                    "IsPrimaryKey": "1",
+                    "IsAttribute": "0"
+                  },
+                  {
+                    "Name": "__PlantTextFile",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "GUID",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsCollection": "0",
+                    "Relationships": {
+                      "Relationship": {
+                        "KeyName": "FK_PlantTextFile___PlantTextFileId",
+                        "ReferencedObjectDef": "PlantTextFile",
+                        "ReferencedPropertyDef": "__PlantTextFileId"
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "Name": "Instruction",
+              "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema",
+              "PropertyDefs": {
+                "PropertyDef": [
+                  {
+                    "Name": "__InstructionId",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DefaultValue": "(newid()))",
+                    "DataType": "GUID",
+                    "IsPrimaryKey": "1",
+                    "IsAttribute": "0"
+                  },
+                  {
+                    "Name": "Name",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "InstructionType",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "Sequence",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "LeftParticipantName",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "RightParticipantName",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "AdditionalText",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "UseAlternateInstructionFormat",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "BOOLEAN",
+                    "Length": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "AlternateLeftParticipantName",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "AlternatSequenceId",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "AlternateRightParticipantName",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "ExpectedPlantText",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "LeftRightInstructionText",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "DeclarationInstructionText",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "SortOrder",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "BYTE",
+                    "Length": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "__Instructions",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "GUID",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsCollection": "1",
+                    "Relationships": {
+                      "Relationship": {
+                        "KeyName": "FK_Instructions___InstructionsId",
+                        "ReferencedObjectDef": "Instructions",
+                        "ReferencedPropertyDef": "__InstructionsId"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "ComplexTypeCount": {
+          "ObjectDefs": {
+            "ObjectDef": [
+              {
+                "ObjectName": "PlantUML",
+                "ParentObjectName": null,
+                "IsCollection": "0"
+              },
+              {
+                "ObjectName": "ParticipantTypes",
+                "ParentObjectName": "PlantUML",
+                "IsCollection": "0"
+              },
+              {
+                "ObjectName": "ParticipantType",
+                "ParentObjectName": "ParticipantTypes",
+                "IsCollection": "1"
+              },
+              {
+                "ObjectName": "Keywords",
+                "ParentObjectName": "PlantUML",
+                "IsCollection": "1"
+              },
+              {
+                "ObjectName": "TargetFormat",
+                "ParentObjectName": "Keywords",
+                "IsCollection": "1"
+              },
+              {
+                "ObjectName": "Keyword",
+                "ParentObjectName": "Keywords",
+                "IsCollection": "1"
+              },
+              {
+                "ObjectName": "SequenceTypes",
+                "ParentObjectName": "PlantUML",
+                "IsCollection": "0"
+              },
+              {
+                "ObjectName": "SequenceType",
+                "ParentObjectName": "SequenceTypes",
+                "IsCollection": "1"
+              },
+              {
+                "ObjectName": "InstructionTypes",
+                "ParentObjectName": "PlantUML",
+                "IsCollection": "0"
+              },
+              {
+                "ObjectName": "InstructionType",
+                "ParentObjectName": "InstructionTypes",
+                "IsCollection": "1"
+              },
+              {
+                "ObjectName": "PlantTextFiles",
+                "ParentObjectName": "PlantUML",
+                "IsCollection": "0"
+              },
+              {
+                "ObjectName": "PlantTextFile",
+                "ParentObjectName": "PlantTextFiles",
+                "IsCollection": "1"
+              },
+              {
+                "ObjectName": "Instructions",
+                "ParentObjectName": "PlantTextFile",
+                "IsCollection": "0"
+              },
+              {
+                "ObjectName": "Instruction",
+                "ParentObjectName": "Instructions",
+                "IsCollection": "1"
+              }
+            ]
+          },
+          "PropertyDefs": {
+            "PropertyDef": [
+              {
+                "ObjectName": "ParticipantType",
+                "PropertyName": "Name",
+                "DataType": "xs:string",
+                "IsAttribute": "0",
+                "IsNullable": "1",
+                "IsCollection": "0"
+              },
+              {
+                "ObjectName": "TargetFormat",
+                "PropertyName": "Name",
+                "DataType": "xs:string",
+                "IsAttribute": "0",
+                "IsNullable": "1",
+                "IsCollection": "0"
+              },
+              {
+                "ObjectName": "TargetFormat",
+                "PropertyName": "DisplayName",
+                "DataType": "xs:string",
+                "IsAttribute": "0",
+                "IsNullable": "1",
+                "IsCollection": "0"
+              },
+              {
+                "ObjectName": "TargetFormat",
+                "PropertyName": "IsUMLDiagram",
+                "DataType": "xs:boolean",
+                "IsAttribute": "0",
+                "IsNullable": "1",
+                "IsCollection": "0"
+              },
+              {
+                "ObjectName": "Keyword",
+                "PropertyName": "Name",
+                "DataType": "xs:string",
+                "IsAttribute": "0",
+                "IsNullable": "1",
+                "IsCollection": "0"
+              },
+              {
+                "ObjectName": "Keyword",
+                "PropertyName": "KeywordText",
+                "DataType": "xs:string",
+                "IsAttribute": "0",
+                "IsNullable": "1",
+                "IsCollection": "0"
+              },
+              {
+                "ObjectName": "Keyword",
+                "PropertyName": "RegEx",
+                "DataType": "xs:string",
+                "IsAttribute": "0",
+                "IsNullable": "1",
+                "IsCollection": "0"
+              },
+              {
+                "ObjectName": "SequenceType",
+                "PropertyName": "Name",
+                "DataType": "xs:string",
+                "IsAttribute": "0",
+                "IsNullable": "1",
+                "IsCollection": "0"
+              },
+              {
+                "ObjectName": "SequenceType",
+                "PropertyName": "SequenceIdentifier",
+                "DataType": "xs:string",
+                "IsAttribute": "0",
+                "IsNullable": "1",
+                "IsCollection": "0"
+              },
+              {
+                "ObjectName": "SequenceType",
+                "PropertyName": "ReverseSequenceIdentifier",
+                "DataType": "xs:string",
+                "IsAttribute": "0",
+                "IsNullable": "1",
+                "IsCollection": "0"
+              },
+              {
+                "ObjectName": "InstructionType",
+                "PropertyName": "Name",
+                "DataType": "xs:string",
+                "IsAttribute": "0",
+                "IsNullable": "1",
+                "IsCollection": "0"
+              },
+              {
+                "ObjectName": "InstructionType",
+                "PropertyName": "KeywordText",
+                "DataType": "xs:string",
+                "IsAttribute": "0",
+                "IsNullable": "1",
+                "IsCollection": "0"
+              },
+              {
+                "ObjectName": "InstructionType",
+                "PropertyName": "RegEx",
+                "DataType": "xs:string",
+                "IsAttribute": "0",
+                "IsNullable": "1",
+                "IsCollection": "0"
+              },
+              {
+                "ObjectName": "InstructionType",
+                "PropertyName": "TargetFormatName",
+                "DataType": "xs:string",
+                "IsAttribute": "0",
+                "IsNullable": "1",
+                "IsCollection": "0"
+              },
+              {
+                "ObjectName": "InstructionType",
+                "PropertyName": "SampleStatement",
+                "DataType": "xs:string",
+                "IsAttribute": "0",
+                "IsNullable": "1",
+                "IsCollection": "0"
+              },
+              {
+                "ObjectName": "PlantTextFile",
+                "PropertyName": "Name",
+                "DataType": "xs:string",
+                "IsAttribute": "0",
+                "IsNullable": "1",
+                "IsCollection": "0"
+              },
+              {
+                "ObjectName": "PlantTextFile",
+                "PropertyName": "PlantText",
+                "DataType": "xs:string",
+                "IsAttribute": "0",
+                "IsNullable": "1",
+                "IsCollection": "0"
+              },
+              {
+                "ObjectName": "Instruction",
+                "PropertyName": "Name",
+                "DataType": "xs:string",
+                "IsAttribute": "0",
+                "IsNullable": "1",
+                "IsCollection": "0"
+              },
+              {
+                "ObjectName": "Instruction",
+                "PropertyName": "InstructionType",
+                "DataType": "xs:string",
+                "IsAttribute": "0",
+                "IsNullable": "1",
+                "IsCollection": "0"
+              },
+              {
+                "ObjectName": "Instruction",
+                "PropertyName": "Sequence",
+                "DataType": "xs:string",
+                "IsAttribute": "0",
+                "IsNullable": "1",
+                "IsCollection": "0"
+              },
+              {
+                "ObjectName": "Instruction",
+                "PropertyName": "LeftParticipantName",
+                "DataType": "xs:string",
+                "IsAttribute": "0",
+                "IsNullable": "1",
+                "IsCollection": "0"
+              },
+              {
+                "ObjectName": "Instruction",
+                "PropertyName": "RightParticipantName",
+                "DataType": "xs:string",
+                "IsAttribute": "0",
+                "IsNullable": "1",
+                "IsCollection": "0"
+              },
+              {
+                "ObjectName": "Instruction",
+                "PropertyName": "AdditionalText",
+                "DataType": "xs:string",
+                "IsAttribute": "0",
+                "IsNullable": "1",
+                "IsCollection": "0"
+              },
+              {
+                "ObjectName": "Instruction",
+                "PropertyName": "UseAlternateInstructionFormat",
+                "DataType": "xs:boolean",
+                "IsAttribute": "0",
+                "IsNullable": "1",
+                "IsCollection": "0"
+              },
+              {
+                "ObjectName": "Instruction",
+                "PropertyName": "AlternateLeftParticipantName",
+                "DataType": "xs:string",
+                "IsAttribute": "0",
+                "IsNullable": "1",
+                "IsCollection": "0"
+              },
+              {
+                "ObjectName": "Instruction",
+                "PropertyName": "AlternatSequenceId",
+                "DataType": "xs:string",
+                "IsAttribute": "0",
+                "IsNullable": "1",
+                "IsCollection": "0"
+              },
+              {
+                "ObjectName": "Instruction",
+                "PropertyName": "AlternateRightParticipantName",
+                "DataType": "xs:string",
+                "IsAttribute": "0",
+                "IsNullable": "1",
+                "IsCollection": "0"
+              },
+              {
+                "ObjectName": "Instruction",
+                "PropertyName": "ExpectedPlantText",
+                "DataType": "xs:string",
+                "IsAttribute": "0",
+                "IsNullable": "1",
+                "IsCollection": "0"
+              },
+              {
+                "ObjectName": "Instruction",
+                "PropertyName": "LeftRightInstructionText",
+                "DataType": "xs:string",
+                "IsAttribute": "0",
+                "IsNullable": "1",
+                "IsCollection": "0"
+              },
+              {
+                "ObjectName": "Instruction",
+                "PropertyName": "DeclarationInstructionText",
+                "DataType": "xs:string",
+                "IsAttribute": "0",
+                "IsNullable": "1",
+                "IsCollection": "0"
+              },
+              {
+                "ObjectName": "Instruction",
+                "PropertyName": "SortOrder",
+                "DataType": "xs:unsignedByte",
+                "IsAttribute": "0",
+                "IsNullable": "1",
+                "IsCollection": "0"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
+                    

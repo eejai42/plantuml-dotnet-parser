@@ -8,10 +8,12 @@
 
         public ParsedUML Parse(string umlText)
         {
-            return new ParsedUML(umlText)
-            {
-                Name = "foo"
-            };
+            var result = new ParsedUML(umlText);
+            var lines = $"{umlText}".Split(Environment.NewLine, StringSplitOptions.RemoveEmptyEntries)
+                        .Select(line => $"{line}".Trim())
+                        .ToList();
+            lines.ForEach(line => result.ParseLine(line));
+            return result;            
         }
     }
 }

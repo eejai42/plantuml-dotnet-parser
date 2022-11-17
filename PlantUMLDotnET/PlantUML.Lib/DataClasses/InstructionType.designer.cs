@@ -7,7 +7,7 @@ using CoreLibrary.Extensions;
 
 namespace plantumldotnetparser.Lib.DataClasses
 {                            
-    public partial class Keyword
+    public partial class InstructionType
     {
         private void InitPoco()
         {
@@ -33,6 +33,12 @@ namespace plantumldotnetparser.Lib.DataClasses
     
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "RegEx")]
         public String RegEx { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "TargetFormatName")]
+        public String TargetFormatName { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "SampleStatement")]
+        public String SampleStatement { get; set; }
     
 
         

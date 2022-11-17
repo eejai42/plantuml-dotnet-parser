@@ -1,4 +1,6 @@
+using Newtonsoft.Json;
 using PlantUML.Lib;
+using plantumldotnetparser.Lib.DataClasses;
 
 namespace TestProject1
 {
@@ -15,11 +17,21 @@ namespace TestProject1
         [Test]
         public void Test1()
         {
-            var parsedResposne = this.Parser.Parse(@$"@startuml
-Alice -> Bob : Hello
+            var parsedResponse = this.Parser.Parse(@$"@startuml
+  Standing -> Ducking : Down
+  Ducking -> Standing : Up
+  Standing -> Jumping : Up2
+  Jumping -> Diving : Down
 @enduml
 ");
+            Console.WriteLine(JsonConvert.SerializeObject(parsedResponse));
             Assert.Pass();
+        }
+
+        [Test]
+        public void Test2()
+        {
+            
         }
     }
 }

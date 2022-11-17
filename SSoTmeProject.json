@@ -21,7 +21,7 @@
       "ProjectTranspilerId": "43f9414a-25ee-43e1-91f0-2cc3938fb603",
       "Name": "AirtableToXml",
       "RelativePath": "/SSoT",
-      "CommandLine": "airtable/airtable-to-xml appEVY3ylbj91g5ki -p entities=PlantTextFiles,Instruction,Participants,Keywords,TargetFormats,SequenceTypes"
+      "CommandLine": "airtable/airtable-to-xml appEVY3ylbj91g5ki -p entities=PlantTextFiles,Instructions,Participants,Keywords,TargetFormats,InstructionTypes,SequenceTypes"
     },
     {
       "MatchedTranspiler": {
@@ -99,6 +99,28 @@
       "Name": "PlantTextToPng",
       "RelativePath": "/docs/SamplePlantText",
       "CommandLine": "planttext-to-png -i .\\sample1.txt"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
+        "Name": "XmlXsltTransform",
+        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."
+      },
+      "ProjectTranspilerId": "0153fb1d-1d1a-4952-af49-aeca51e7c38c",
+      "Name": "XmlXsltTransform",
+      "RelativePath": "/PlantUMLDotnET/PlantUML.Lib/DataClasses",
+      "CommandLine": "xml-xslt-transform -i ..\\..\\..\\PlantUMLSSoT\\PlantUML.xml -i CreateDerivativeCode.xslt"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "8defe7a3-89cf-4989-b679-d9226519f622",
+        "Name": "OdxmlToNodeJSDocs",
+        "Description": "Creates easy to read/navigate html documentation for an Odxml Schema."
+      },
+      "ProjectTranspilerId": "c3e7c826-e810-450b-b74d-8a2ea754dc36",
+      "Name": "OdxmlToNodeJSDocs",
+      "RelativePath": "/ODXML/RAW",
+      "CommandLine": "odxml42/odxml-to-nodejs-docs -i .\\DataSchema.odxml"
     }
   ]
 }

@@ -1,5 +1,5 @@
 <html><head><title>plantuml-dotnet-parser - Single Page Doc s</title><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous" /></head><body style="padding: 0.8em;"><h1>        
-plantuml-dotnet-parser  Data model</h1><a class="btn btn-sm btn-primary" href="Index.html"><<&nbsp;Back Interactive Object Explorer</a><h3>Table of Contents</h3><ol><li><a href="#PlantUML">PlantUML</a></li><li><a href="#ParticipantType">ParticipantType</a></li><li><a href="#TargetFormat">TargetFormat</a></li><li><a href="#Keyword">Keyword</a></li><li><a href="#SequenceType">SequenceType</a></li><li><a href="#PlantTextFile">PlantTextFile</a></li><li><a href="#Instruction">Instruction</a></li></ol><table style="width: 100%"><tr><td colspan="3"><span id="PlantUML" />
+plantuml-dotnet-parser  Data model</h1><a class="btn btn-sm btn-primary" href="Index.html"><<&nbsp;Back Interactive Object Explorer</a><h3>Table of Contents</h3><ol><li><a href="#PlantUML">PlantUML</a></li><li><a href="#ParticipantType">ParticipantType</a></li><li><a href="#TargetFormat">TargetFormat</a></li><li><a href="#Keyword">Keyword</a></li><li><a href="#SequenceType">SequenceType</a></li><li><a href="#InstructionType">InstructionType</a></li><li><a href="#PlantTextFile">PlantTextFile</a></li><li><a href="#Instruction">Instruction</a></li></ol><table style="width: 100%"><tr><td colspan="3"><span id="PlantUML" />
                 <div style="clear: both"></div><div class="row"><div class="col-md-12">
                         <a name="PlantUML"></a>
                         <hr /><h2>
@@ -53,7 +53,9 @@ plantuml-dotnet-parser  Data model</h1><a class="btn btn-sm btn-primary" href="I
                             
                             Keyword  
                         </h2><div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"></div></div></div></td></tr><tr><th align="left" style="width: 5em;">CRUD</th><th align="left">Name</th><th align="left">Type</th><th align="left">Original Name</th></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
-                        Name</td><td>TEXT</td><td></td></tr><tr><th colspan="3" style="padding-top: 1em;">Keyword Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> Name
+                        Name</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        KeywordText</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        RegEx</td><td>TEXT</td><td></td></tr><tr><th colspan="3" style="padding-top: 1em;">Keyword Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> Name, KeywordText, RegEx
 
 <b>FROM</b> Keyword
 
@@ -72,6 +74,24 @@ plantuml-dotnet-parser  Data model</h1><a class="btn btn-sm btn-primary" href="I
                         ReverseSequenceIdentifier</td><td>TEXT</td><td></td></tr><tr><th colspan="3" style="padding-top: 1em;">SequenceType Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> Name, SequenceIdentifier, ReverseSequenceIdentifier
 
 <b>FROM</b> SequenceType
+
+</div></td></tr><tr><td colspan="3" style="font-size: 0.8em; padding: 0.25em;"></td></tr><tr><td colspan="3"><span id="InstructionType" />
+                <div style="clear: both"></div><div class="row"><div class="col-md-12">
+                        <a name="InstructionType"></a>
+                        <hr /><h2>
+                            
+                            
+                            
+                            
+                            InstructionType  
+                        </h2><div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"></div></div></div></td></tr><tr><th align="left" style="width: 5em;">CRUD</th><th align="left">Name</th><th align="left">Type</th><th align="left">Original Name</th></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        Name</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        KeywordText</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        RegEx</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        TargetFormatName</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        SampleStatement</td><td>TEXT</td><td></td></tr><tr><th colspan="3" style="padding-top: 1em;">InstructionType Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> Name, KeywordText, RegEx, TargetFormatName, SampleStatement
+
+<b>FROM</b> InstructionType
 
 </div></td></tr><tr><td colspan="3" style="font-size: 0.8em; padding: 0.25em;"></td></tr><tr><td colspan="3"><span id="PlantTextFile" />
                 <div style="clear: both"></div><div class="row"><div class="col-md-12">
