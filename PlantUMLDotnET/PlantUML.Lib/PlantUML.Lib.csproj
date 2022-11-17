@@ -1,13 +1,96 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{08B6E92F-5C35-45E7-BEFD-AAD2F0AFEF2B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PlantUML.Lib</RootNamespace>
+    <AssemblyName>PlantUML.Lib</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
-
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
-
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="DataClasses\CoreLibraryExtensions.cs" />
+    <Compile Include="DataClasses\Instruction.cs" />
+    <Compile Include="DataClasses\Instruction.designer.cs">
+      <DependentUpon>Instruction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses\InstructionType.cs" />
+    <Compile Include="DataClasses\InstructionType.designer.cs">
+      <DependentUpon>InstructionType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses\InstructionType.designer2.cs" />
+    <Compile Include="DataClasses\Keyword.cs" />
+    <Compile Include="DataClasses\Keyword.designer.cs">
+      <DependentUpon>Keyword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses\Keyword.designer2.cs" />
+    <Compile Include="DataClasses\ParticipantType.cs" />
+    <Compile Include="DataClasses\ParticipantType.designer.cs">
+      <DependentUpon>ParticipantType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses\PlantTextFile.cs" />
+    <Compile Include="DataClasses\PlantTextFile.designer.cs">
+      <DependentUpon>PlantTextFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses\PlantUML.cs" />
+    <Compile Include="DataClasses\PlantUML.designer.cs">
+      <DependentUpon>PlantUML.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses\SequenceType.cs" />
+    <Compile Include="DataClasses\SequenceType.designer.cs">
+      <DependentUpon>SequenceType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses\TargetFormat.cs" />
+    <Compile Include="DataClasses\TargetFormat.designer.cs">
+      <DependentUpon>TargetFormat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extensions\PlantTextExtensions.cs" />
+    <Compile Include="ParsedUML.cs" />
+    <Compile Include="PlantUMLParser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DataClasses\CreateDerivativeCode.xslt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

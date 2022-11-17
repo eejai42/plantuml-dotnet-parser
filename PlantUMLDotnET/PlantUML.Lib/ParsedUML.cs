@@ -1,4 +1,6 @@
 ﻿using plantumldotnetparser.Lib.DataClasses;
+using System;
+using System.Collections.Generic;
 
 namespace PlantUML.Lib
 {
