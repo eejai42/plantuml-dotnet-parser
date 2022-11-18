@@ -1289,6 +1289,7 @@ Foo -&gt; Foo7: To queue
       <RegEx>@startuml</RegEx>
       <KeywordText>@startuml</KeywordText>
       <TargetFormatName>SequenceDiagram</TargetFormatName>
+      <SortOrder>3</SortOrder>
     </InstructionType>
     <InstructionType>
       <InstructionTypeId>rec4hVxyrDF7TlLXj</InstructionTypeId>
@@ -1298,6 +1299,7 @@ Foo -&gt; Foo7: To queue
       <SampleStatement>as</SampleStatement>
       <RegEx>as</RegEx>
       <KeywordText>as</KeywordText>
+      <SortOrder>8</SortOrder>
     </InstructionType>
     <InstructionType>
       <InstructionTypeId>recDw6yzfVrDClqVy</InstructionTypeId>
@@ -1307,6 +1309,7 @@ Foo -&gt; Foo7: To queue
       <SampleStatement>start</SampleStatement>
       <RegEx>start</RegEx>
       <KeywordText>start</KeywordText>
+      <SortOrder>5</SortOrder>
     </InstructionType>
     <InstructionType>
       <InstructionTypeId>recbyYxbq7On2MlYv</InstructionTypeId>
@@ -1323,6 +1326,7 @@ Foo -&gt; Foo7: To queue
       <Instructions>recyXj0KB6xdrxrmA</Instructions>
       <SampleStatement>participant participant as Foo #red</SampleStatement>
       <RegEx>(participant|actor)(.*)( as )(.*)</RegEx>
+      <SortOrder>1</SortOrder>
     </InstructionType>
     <InstructionType>
       <InstructionTypeId>receOV79on2gosOB1</InstructionTypeId>
@@ -1332,6 +1336,7 @@ Foo -&gt; Foo7: To queue
       <SampleStatement>title This is a title</SampleStatement>
       <RegEx>title</RegEx>
       <KeywordText>title</KeywordText>
+      <SortOrder>7</SortOrder>
     </InstructionType>
     <InstructionType>
       <InstructionTypeId>recmaLIPTl2qwjOb6</InstructionTypeId>
@@ -1344,6 +1349,7 @@ Foo -&gt; Foo7: To queue
       <RegEx>@enduml</RegEx>
       <KeywordText>@enduml</KeywordText>
       <TargetFormatName>SequenceDiagram</TargetFormatName>
+      <SortOrder>4</SortOrder>
     </InstructionType>
     <InstructionType>
       <InstructionTypeId>recmycltGPSz7NW3D</InstructionTypeId>
@@ -1361,7 +1367,8 @@ Foo -&gt; Foo7: To queue
       <Instructions>rec0KSi29u7NIqdKr</Instructions>
       <Instructions>reclN0sb9mVrtogU2</Instructions>
       <SampleStatement>Bob --&gt; Alice: Authentication Response</SampleStatement>
-      <RegEx>(.*)(-&gt;)(.*)(:)(.*)</RegEx>
+      <RegEx>([^-]*)(-?-&gt;)([^\:]*)</RegEx>
+      <SortOrder>2</SortOrder>
     </InstructionType>
     <InstructionType>
       <InstructionTypeId>rect6SuWZZnTwjtrQ</InstructionTypeId>
@@ -1371,6 +1378,7 @@ Foo -&gt; Foo7: To queue
       <SampleStatement>stop</SampleStatement>
       <RegEx>stop</RegEx>
       <KeywordText>stop</KeywordText>
+      <SortOrder>6</SortOrder>
     </InstructionType>
   </InstructionTypes>
   <SequenceTypes>
