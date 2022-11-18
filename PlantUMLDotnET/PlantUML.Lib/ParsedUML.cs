@@ -6,17 +6,21 @@ namespace PlantUML.Lib
 {
     public class ParsedUML
     {
-        public ParsedUML(string umlText)
+        public ParsedUML()
         {
-            UmlText = umlText;
+            this.UmlText = String.Empty;
             this.Lines = new List<String>();
             this.Instructions = new List<Instruction>();
         }
+        public ParsedUML(string umlText): this()
+        {
+            UmlText = umlText;
+        }
 
-        public string UmlText { get; }
-        public List<string> Lines { get; }
-        public List<Instruction> Instructions { get; }
-        public string Name { get; internal set; }
+        public string UmlText { get; set; }
+        public List<string> Lines { get; set; }
+        public List<Instruction> Instructions { get; set; }
+        public string Name { get; set; }
 
         internal void ParseLine(string line)
         {
