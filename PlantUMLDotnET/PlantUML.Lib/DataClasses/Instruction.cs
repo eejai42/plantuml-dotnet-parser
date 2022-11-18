@@ -22,7 +22,10 @@ namespace plantumldotnetparser.Lib.DataClasses
         {
             line = $"{line}";
             var firstWord = line.Substring(0, $"{line} ".IndexOf(" "));
-            var keyword = DataClasses.InstructionType.InstructionTypes.First(fod => Regex.IsMatch(line, fod.RegEx));
+            var keyword = DataClasses.InstructionType
+                                        .InstructionTypes
+                                        .OrderBy(instructionType => instructionType.SortOrder)
+                                        .FirstOrDefault(fod => Regex.IsMatch(line, fod.RegEx));
             if (keyword == DataClasses.InstructionType.LeftRightMessage)
             {
                 var matchList = Regex.Matches(line, keyword.RegEx).OfType<Match>().ToList();

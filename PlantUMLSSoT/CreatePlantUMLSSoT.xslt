@@ -89,6 +89,7 @@
             <xsl:apply-templates select="RegEx" />
             <xsl:apply-templates select="TargetFormatName" />
             <xsl:apply-templates select="SampleStatement" />
+            <xsl:apply-templates select="SortOrder" />
         </InstructionType>
     </xsl:template>
 

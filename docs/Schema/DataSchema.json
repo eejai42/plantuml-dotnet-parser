@@ -520,6 +520,31 @@
                       "Description": "",
                       "DataType": "TEXT"
                     }
+                  },
+                  {
+                    "Name": "SortOrder",
+                    "OriginalName": "SortOrder",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "BYTE",
+                    "OriginalDataType": "BYTE",
+                    "Length": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "InstructionType.SortOrder",
+                      "FromObjectName": "InstructionType",
+                      "FromPropertyName": "SortOrder",
+                      "ToName": "SortOrder",
+                      "ToObjectName": "InstructionType",
+                      "ToPropertyName": "SortOrder",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "BYTE"
+                    }
                   }
                 ]
               },

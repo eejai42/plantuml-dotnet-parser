@@ -433,6 +433,16 @@
                     "IsCollection": "0"
                   },
                   {
+                    "Name": "SortOrder",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "BYTE",
+                    "Length": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
                     "Name": "__InstructionTypes",
                     "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
                     "DataType": "GUID",
@@ -929,6 +939,14 @@
                 "ObjectName": "InstructionType",
                 "PropertyName": "SampleStatement",
                 "DataType": "xs:string",
+                "IsAttribute": "0",
+                "IsNullable": "1",
+                "IsCollection": "0"
+              },
+              {
+                "ObjectName": "InstructionType",
+                "PropertyName": "SortOrder",
+                "DataType": "xs:unsignedByte",
                 "IsAttribute": "0",
                 "IsNullable": "1",
                 "IsCollection": "0"

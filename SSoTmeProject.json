@@ -1,9 +1,13 @@
 {
+  "HiddenPaths": [],
+  "ExpandedPaths": [],
   "ShowHidden": false,
   "ShowAllFiles": false,
+  "CurrentPath": null,
   "SaveDisabled": false,
   "SSoTmeProjectId": "8269c68e-87ce-4f90-b3aa-488c3f54ae68",
   "Name": "plantuml-dotnet-parser",
+  "RootPath": "C:\\Development\\SSoTmeOST\\Windows\\plantuml-dotnet-parser",
   "ProjectSettings": [
     {
       "ProjectSettingId": "8e0307b8-6f26-456c-9f65-ecd95c9a4fe1",
@@ -15,9 +19,37 @@
     {
       "MatchedTranspiler": {
         "TranspilerId": "19d8142a-2f4d-46ac-9de6-77441f233192",
+        "AccountHolderId": "c2bb89f9-26da-4ebf-9d35-0c4547eb89e2",
         "Name": "AirtableToXml",
-        "Description": "Extracts the contents of an airtable base as a single Xml file."
+        "DisplayName": "Airtable To Xml",
+        "Description": "Extracts the contents of an airtable base as a single Xml file.",
+        "CreatedOn": "2018-04-07T21:28:06.273",
+        "IsActive": true,
+        "CurrentRoutingKey": "amq.gen-2dkJ2DuOEttKHj50NWdWjA",
+        "LowerName": "airtabletoxml",
+        "UpperName": "AIRTABLETOXML",
+        "LowerHyphenName": "airtable-to-xml",
+        "InputDescriptionMD": "-p baseId={the base id} -p apiKey={your api key} -p ignore-to-name=false\r\n\r\nYou can either provide a full entities.json or specify an individual tab as follows...\r\n            var airtable = this.GetParameterByName(\"airtable\");\r\n            var singular = this.GetParameterByName(\"singular\");\r\n            var plural = this.GetParameterByName(\"plural\");\r\n\r\nYou can also specify an optional view to use\r\n            var view = this.GetParameterByName(\"view\");",
+        "OutputDescriptionMD": "Airtable.xml",
+        "ExampleMD": "ssotme airtable/airtable-to-xml -p baseId=12345",
+        "InputFileTypeId": "2748dae4-2e34-44b1-a268-554f2b1c3330",
+        "OutputFileTypeId": "8c1bfcc6-a4de-4604-b785-9aa677c5302a",
+        "TranspileRequests": [],
+        "TranspilerInstances": [],
+        "TranspilerVersions": [
+          {
+            "TranspilerVersionId": "7f5dec02-6a37-4a68-9f32-ba0b5c79b495",
+            "TranspilerId": "19d8142a-2f4d-46ac-9de6-77441f233192",
+            "Name": "v1",
+            "CreatedOn": "2018-04-07T21:28:32.023",
+            "IsActive": true,
+            "TranspilerFileTypeId_TranspilerInputHints": [],
+            "TranspilerInstances": [],
+            "ReplacedByTranspilerVersionId_TranspilerVersions": []
+          }
+        ]
       },
+      "CLIHandler": null,
       "ProjectTranspilerId": "43f9414a-25ee-43e1-91f0-2cc3938fb603",
       "Name": "AirtableToXml",
       "RelativePath": "/SSoT",
@@ -26,9 +58,40 @@
     {
       "MatchedTranspiler": {
         "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
+        "AccountHolderId": "1e876e4f-d63b-4698-bd68-3bc27876e41e",
         "Name": "XmlXsltTransform",
-        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."
+        "DisplayName": "Xml Xslt Transform",
+        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset.",
+        "CreatedOn": "2017-08-30T15:45:09.907",
+        "IsActive": true,
+        "CurrentRoutingKey": "amq.gen-9UUAbm6e0ORY0iYDCJTtLA",
+        "LowerName": "xmlxslttransform",
+        "UpperName": "XMLXSLTTRANSFORM",
+        "LowerHyphenName": "xml-xslt-transform",
+        "ReadMeMD": "The tool processes the first text file it finds (which is presumed to be in xml format), with the first Xslt file provided, and includes any parameters that are passed to ssotme as well.\r\n\r\nThe output is expected to be a FileSet Xml blob with the results of the transform.",
+        "InputDescriptionMD": "At least 1 input Xml file, An Xslt file to use for the Transform operation and any additional parameters that the Xslt file uses for it's transpiling functionality.  These could be options, values, namespaces, etc.",
+        "OutputDescriptionMD": "A fileset with the result of the Xslt transform, usually including at least 1 or more files.  The example command might produce an HTML Document that describes (in english) the contents of the Xml file.  Essentially a \"report\" about the xml file. ",
+        "ExampleMD": "ssotme -install xml-xslt-transform -i MyData.xml -i CreateDocs.xslt",
+        "InputFileTypeId": "f1b92a2a-3f83-4000-9b37-57f920e14419",
+        "OutputFileTypeId": "952e47eb-3448-4627-8dc4-93dab494c957",
+        "Category": "type-conversion",
+        "IsRecommended": true,
+        "TranspileRequests": [],
+        "TranspilerInstances": [],
+        "TranspilerVersions": [
+          {
+            "TranspilerVersionId": "7e941388-752b-4b0f-9631-939b790be10f",
+            "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
+            "Name": "v1",
+            "CreatedOn": "2017-08-30T15:45:10.653",
+            "IsActive": true,
+            "TranspilerFileTypeId_TranspilerInputHints": [],
+            "TranspilerInstances": [],
+            "ReplacedByTranspilerVersionId_TranspilerVersions": []
+          }
+        ]
       },
+      "CLIHandler": null,
       "ProjectTranspilerId": "64cc9255-c634-46b5-8109-6b9b7f97481b",
       "Name": "XmlXsltTransform",
       "RelativePath": "/PlantUMLSSoT",
@@ -37,9 +100,38 @@
     {
       "MatchedTranspiler": {
         "TranspilerId": "fd14a7d7-472c-4dc6-8f5c-ff7baeb4f5a7",
+        "AccountHolderId": "9aeb4f89-3c90-4972-927c-7deebfbb9de4",
         "Name": "XmlToOdxml",
-        "Description": "Extract the Schema of an Xml file and then convert that into Odxml"
+        "DisplayName": "Xml To Odxml",
+        "Description": "Extract the Schema of an Xml file and then convert that into Odxml",
+        "CreatedOn": "2017-11-06T20:51:33.15",
+        "IsActive": true,
+        "CurrentRoutingKey": "amq.gen-1udZlHg208qUf6jrCpeFVg",
+        "LowerName": "xmltoodxml",
+        "UpperName": "XMLTOODXML",
+        "LowerHyphenName": "xml-to-odxml",
+        "ReadMeMD": "After extracting the schema (Xsd) of the Xml using the [Xml-To-Xsd] transform, the [odxml42/Xsd-To-Odxml] transform is used to produce the final odxml structure.",
+        "InputDescriptionMD": "-p \"include-relationship-map=true\" if you specifically want to include that additional info.",
+        "InputFileTypeId": "f1b92a2a-3f83-4000-9b37-57f920e14419",
+        "OutputFileTypeId": "33de424c-cfe0-498e-ae70-44da375a8fb2",
+        "Category": "odxml",
+        "IsRecommended": true,
+        "TranspileRequests": [],
+        "TranspilerInstances": [],
+        "TranspilerVersions": [
+          {
+            "TranspilerVersionId": "68d94984-d128-401c-b4da-c53301378b92",
+            "TranspilerId": "fd14a7d7-472c-4dc6-8f5c-ff7baeb4f5a7",
+            "Name": "v1",
+            "CreatedOn": "2017-11-06T20:51:34.263",
+            "IsActive": true,
+            "TranspilerFileTypeId_TranspilerInputHints": [],
+            "TranspilerInstances": [],
+            "ReplacedByTranspilerVersionId_TranspilerVersions": []
+          }
+        ]
       },
+      "CLIHandler": null,
       "ProjectTranspilerId": "561702e3-a56a-4136-aedb-2888f1d98519",
       "Name": "XmlToOdxml",
       "RelativePath": "/ODXML/RAW",
@@ -48,9 +140,40 @@
     {
       "MatchedTranspiler": {
         "TranspilerId": "bbea1b94-36ed-44f6-8d99-20ac4c49f982",
+        "AccountHolderId": "9aeb4f89-3c90-4972-927c-7deebfbb9de4",
         "Name": "OdxmlToCleanOdxml",
-        "Description": "Allows for any data model to be \"cleaned up\" while preserving a \"map\" between the old/new models"
+        "DisplayName": "Odxml To Clean Odxml",
+        "Description": "Allows for any data model to be \"cleaned up\" while preserving a \"map\" between the old/new models",
+        "CreatedOn": "2017-08-28T21:06:14.793",
+        "IsActive": true,
+        "CurrentRoutingKey": "amq.gen-1udZlHg208qUf6jrCpeFVg",
+        "LowerName": "odxmltocleanodxml",
+        "UpperName": "ODXMLTOCLEANODXML",
+        "LowerHyphenName": "odxml-to-clean-odxml",
+        "ReadMeMD": "This transform creates a renames.xml which allows (on a field by field bases) for each field to be:\r\n\r\nIncluded/Excluded\r\nRenamed\r\nHave it's type changed\r\nAny other meta data appropriate to this project.\r\n\r\nAll of this is combined together into a new ODXML file which includes all of the mapping data.  As always, this is just one way to handle \"mapping\" data from one format to another.",
+        "InputDescriptionMD": "-p \"include-by-default=false\" if you want to NOT include new objects by default.",
+        "OutputDescriptionMD": "DataSchema.odxml with \"clean\" values substituted, for the possible reduced overal data set defined in the raw.odxml.",
+        "ExampleMD": "ssotme odxml42/odxml-to-clean-odxml -i raw.odxml -i renames.xml",
+        "InputFileTypeId": "33de424c-cfe0-498e-ae70-44da375a8fb2",
+        "OutputFileTypeId": "33de424c-cfe0-498e-ae70-44da375a8fb2",
+        "Category": "odxml",
+        "IsRecommended": true,
+        "TranspileRequests": [],
+        "TranspilerInstances": [],
+        "TranspilerVersions": [
+          {
+            "TranspilerVersionId": "b44560cc-db50-47b3-a04b-edf5cce79315",
+            "TranspilerId": "bbea1b94-36ed-44f6-8d99-20ac4c49f982",
+            "Name": "v1",
+            "CreatedOn": "2017-08-28T21:06:38.54",
+            "IsActive": true,
+            "TranspilerFileTypeId_TranspilerInputHints": [],
+            "TranspilerInstances": [],
+            "ReplacedByTranspilerVersionId_TranspilerVersions": []
+          }
+        ]
       },
+      "CLIHandler": null,
       "ProjectTranspilerId": "0f7a6a56-7a3b-4c0e-bde9-7113cb4131bc",
       "Name": "OdxmlToCleanOdxml",
       "RelativePath": "/ODXML",
@@ -59,9 +182,37 @@
     {
       "MatchedTranspiler": {
         "TranspilerId": "8defe7a3-89cf-4989-b679-d9226519f622",
+        "AccountHolderId": "9aeb4f89-3c90-4972-927c-7deebfbb9de4",
         "Name": "OdxmlToNodeJSDocs",
-        "Description": "Creates easy to read/navigate html documentation for an Odxml Schema."
+        "DisplayName": "Odxml To Node J S Docs",
+        "Description": "Creates easy to read/navigate html documentation for an Odxml Schema.",
+        "CreatedOn": "2017-08-29T21:18:01.293",
+        "IsActive": true,
+        "CurrentRoutingKey": "amq.gen-1udZlHg208qUf6jrCpeFVg",
+        "LowerName": "odxmltonodejsdocs",
+        "UpperName": "ODXMLTONODEJSDOCS",
+        "LowerHyphenName": "odxml-to-node-j-s-docs",
+        "ReadMeMD": "Examines the schema defined by an Odxml file and creates an interactive DataModel explorer for exploring the structure of the data model defined. \r\n\r\nCreates both a single page version of the docs, as well as a Node.JS website that can be started on demand to explore the data model more interactively.",
+        "InputFileTypeId": "33de424c-cfe0-498e-ae70-44da375a8fb2",
+        "OutputFileTypeId": "d8fc84b7-442d-4c7a-92a0-eefc11391934",
+        "Category": "documentation",
+        "IsRecommended": true,
+        "TranspileRequests": [],
+        "TranspilerInstances": [],
+        "TranspilerVersions": [
+          {
+            "TranspilerVersionId": "26af4ad8-fb5d-4027-8e4b-2260c62f3f24",
+            "TranspilerId": "8defe7a3-89cf-4989-b679-d9226519f622",
+            "Name": "v1",
+            "CreatedOn": "2017-08-29T21:18:03.463",
+            "IsActive": true,
+            "TranspilerFileTypeId_TranspilerInputHints": [],
+            "TranspilerInstances": [],
+            "ReplacedByTranspilerVersionId_TranspilerVersions": []
+          }
+        ]
       },
+      "CLIHandler": null,
       "ProjectTranspilerId": "acde3d06-f2d4-48b7-9304-6cfb7292492b",
       "Name": "OdxmlToNodeJSDocs",
       "RelativePath": "/docs/Schema",
@@ -70,9 +221,37 @@
     {
       "MatchedTranspiler": {
         "TranspilerId": "595b7fe7-7f64-44c2-b48c-d096d997211f",
+        "AccountHolderId": "9aeb4f89-3c90-4972-927c-7deebfbb9de4",
         "Name": "OdxmlToCSharpPOCOs",
-        "Description": "Odxml To CSharp POCOs"
+        "DisplayName": "Odxml To C Sharp P O C Os",
+        "Description": "Odxml To CSharp POCOs",
+        "CreatedOn": "2017-09-07T17:35:30.24",
+        "IsActive": true,
+        "CurrentRoutingKey": "amq.gen-03WQOa1MbTW4GPFTlaaLAA",
+        "LowerName": "odxmltocsharppocos",
+        "UpperName": "ODXMLTOCSHARPPOCOS",
+        "LowerHyphenName": "odxml-to-c-sharp-p-o-c-os",
+        "ReadMeMD": "param name=\"include-list-prefix\" select=\"true\"\r\nWill include the fieldname of the referenced object before lists so that if a child object has multiple references to an object, the collections on the parent will be distinguished by the name of the child properties.\r\n\r\nparam name=initialize-guid-pks = true\r\nparam name=include-sdm-expand=false\r\nparam name=include-load-methods=true\r\n\r\nparam name=\"include-inheritance\" select=\"true\"\r\nIf a relationship exists on the primary key fo the object, it will be infered to \"descend\" from the refrenced object.\r\n\r\nparam name=\"pluralize-json-references\" select=\"true\"\r\nDetermines if the \"original name\" should be pluraized in the Json serialization header.\r\n\r\nparam name=sdm--namespace = 'using KP.ODXML7.SqlDataManager.{project-name}.SqlDataManagement;'\r\n\r\n\r\nparam name=extensions-namespace = 'CoreLibrary.Extensions'\r\n\r\nparam name=serialize-to-original-names=\"'false\"  \r\nInidicates if the json formatting should use original names\r\n\r\nparam name=\"csproj-filename\" = ''\r\nparam name=\"output-csproj-filename\" = ''\r\nparam name=\"relative-path\" = ''\r\n",
+        "InputFileTypeId": "33de424c-cfe0-498e-ae70-44da375a8fb2",
+        "OutputFileTypeId": "47f5fc9f-0c22-4f73-8d18-0544a7f05d7b",
+        "Category": "dot-net",
+        "IsRecommended": true,
+        "TranspileRequests": [],
+        "TranspilerInstances": [],
+        "TranspilerVersions": [
+          {
+            "TranspilerVersionId": "a52a5130-bd3c-4974-8def-374cd52a4592",
+            "TranspilerId": "595b7fe7-7f64-44c2-b48c-d096d997211f",
+            "Name": "v1",
+            "CreatedOn": "2017-09-07T17:35:33.567",
+            "IsActive": true,
+            "TranspilerFileTypeId_TranspilerInputHints": [],
+            "TranspilerInstances": [],
+            "ReplacedByTranspilerVersionId_TranspilerVersions": []
+          }
+        ]
       },
+      "CLIHandler": null,
       "ProjectTranspilerId": "5a5e3fa9-6656-456b-acaf-dac12bb3b2c9",
       "Name": "OdxmlToCSharpPOCOs",
       "RelativePath": "/PlantUMLDotnET/PlantUML.Lib/DataClasses",
@@ -81,9 +260,40 @@
     {
       "MatchedTranspiler": {
         "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
+        "AccountHolderId": "1e876e4f-d63b-4698-bd68-3bc27876e41e",
         "Name": "XmlXsltTransform",
-        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."
+        "DisplayName": "Xml Xslt Transform",
+        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset.",
+        "CreatedOn": "2017-08-30T15:45:09.907",
+        "IsActive": true,
+        "CurrentRoutingKey": "amq.gen-9UUAbm6e0ORY0iYDCJTtLA",
+        "LowerName": "xmlxslttransform",
+        "UpperName": "XMLXSLTTRANSFORM",
+        "LowerHyphenName": "xml-xslt-transform",
+        "ReadMeMD": "The tool processes the first text file it finds (which is presumed to be in xml format), with the first Xslt file provided, and includes any parameters that are passed to ssotme as well.\r\n\r\nThe output is expected to be a FileSet Xml blob with the results of the transform.",
+        "InputDescriptionMD": "At least 1 input Xml file, An Xslt file to use for the Transform operation and any additional parameters that the Xslt file uses for it's transpiling functionality.  These could be options, values, namespaces, etc.",
+        "OutputDescriptionMD": "A fileset with the result of the Xslt transform, usually including at least 1 or more files.  The example command might produce an HTML Document that describes (in english) the contents of the Xml file.  Essentially a \"report\" about the xml file. ",
+        "ExampleMD": "ssotme -install xml-xslt-transform -i MyData.xml -i CreateDocs.xslt",
+        "InputFileTypeId": "f1b92a2a-3f83-4000-9b37-57f920e14419",
+        "OutputFileTypeId": "952e47eb-3448-4627-8dc4-93dab494c957",
+        "Category": "type-conversion",
+        "IsRecommended": true,
+        "TranspileRequests": [],
+        "TranspilerInstances": [],
+        "TranspilerVersions": [
+          {
+            "TranspilerVersionId": "7e941388-752b-4b0f-9631-939b790be10f",
+            "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
+            "Name": "v1",
+            "CreatedOn": "2017-08-30T15:45:10.653",
+            "IsActive": true,
+            "TranspilerFileTypeId_TranspilerInputHints": [],
+            "TranspilerInstances": [],
+            "ReplacedByTranspilerVersionId_TranspilerVersions": []
+          }
+        ]
       },
+      "CLIHandler": null,
       "ProjectTranspilerId": "65931077-3b6e-422d-a2f2-3ee3bed447bf",
       "Name": "XmlXsltTransform",
       "RelativePath": "/docs/SamplePlantText",
@@ -92,9 +302,31 @@
     {
       "MatchedTranspiler": {
         "TranspilerId": "fddc44e8-1e48-49bb-b9db-56a10d39c6aa",
+        "AccountHolderId": "1e876e4f-d63b-4698-bd68-3bc27876e41e",
         "Name": "PlantTextToPng",
-        "Description": "PlantText to Png"
+        "DisplayName": "Plant Text To Png",
+        "Description": "PlantText to Png",
+        "CreatedOn": "2022-11-16T00:04:11.333",
+        "IsActive": true,
+        "LowerName": "planttexttopng",
+        "UpperName": "PLANTTEXTTOPNG",
+        "LowerHyphenName": "plant-text-to-png",
+        "TranspileRequests": [],
+        "TranspilerInstances": [],
+        "TranspilerVersions": [
+          {
+            "TranspilerVersionId": "a8fef80b-d4cd-4379-963d-4c62ebf7f1cc",
+            "TranspilerId": "fddc44e8-1e48-49bb-b9db-56a10d39c6aa",
+            "Name": "v1",
+            "CreatedOn": "2022-11-16T00:05:17.66",
+            "IsActive": true,
+            "TranspilerFileTypeId_TranspilerInputHints": [],
+            "TranspilerInstances": [],
+            "ReplacedByTranspilerVersionId_TranspilerVersions": []
+          }
+        ]
       },
+      "CLIHandler": null,
       "ProjectTranspilerId": "6fc3124c-70b7-42b3-b26d-06dd6c4f187b",
       "Name": "PlantTextToPng",
       "RelativePath": "/docs/SamplePlantText",
@@ -103,9 +335,40 @@
     {
       "MatchedTranspiler": {
         "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
+        "AccountHolderId": "1e876e4f-d63b-4698-bd68-3bc27876e41e",
         "Name": "XmlXsltTransform",
-        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."
+        "DisplayName": "Xml Xslt Transform",
+        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset.",
+        "CreatedOn": "2017-08-30T15:45:09.907",
+        "IsActive": true,
+        "CurrentRoutingKey": "amq.gen-9UUAbm6e0ORY0iYDCJTtLA",
+        "LowerName": "xmlxslttransform",
+        "UpperName": "XMLXSLTTRANSFORM",
+        "LowerHyphenName": "xml-xslt-transform",
+        "ReadMeMD": "The tool processes the first text file it finds (which is presumed to be in xml format), with the first Xslt file provided, and includes any parameters that are passed to ssotme as well.\r\n\r\nThe output is expected to be a FileSet Xml blob with the results of the transform.",
+        "InputDescriptionMD": "At least 1 input Xml file, An Xslt file to use for the Transform operation and any additional parameters that the Xslt file uses for it's transpiling functionality.  These could be options, values, namespaces, etc.",
+        "OutputDescriptionMD": "A fileset with the result of the Xslt transform, usually including at least 1 or more files.  The example command might produce an HTML Document that describes (in english) the contents of the Xml file.  Essentially a \"report\" about the xml file. ",
+        "ExampleMD": "ssotme -install xml-xslt-transform -i MyData.xml -i CreateDocs.xslt",
+        "InputFileTypeId": "f1b92a2a-3f83-4000-9b37-57f920e14419",
+        "OutputFileTypeId": "952e47eb-3448-4627-8dc4-93dab494c957",
+        "Category": "type-conversion",
+        "IsRecommended": true,
+        "TranspileRequests": [],
+        "TranspilerInstances": [],
+        "TranspilerVersions": [
+          {
+            "TranspilerVersionId": "7e941388-752b-4b0f-9631-939b790be10f",
+            "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
+            "Name": "v1",
+            "CreatedOn": "2017-08-30T15:45:10.653",
+            "IsActive": true,
+            "TranspilerFileTypeId_TranspilerInputHints": [],
+            "TranspilerInstances": [],
+            "ReplacedByTranspilerVersionId_TranspilerVersions": []
+          }
+        ]
       },
+      "CLIHandler": null,
       "ProjectTranspilerId": "0153fb1d-1d1a-4952-af49-aeca51e7c38c",
       "Name": "XmlXsltTransform",
       "RelativePath": "/PlantUMLDotnET/PlantUML.Lib/DataClasses",
@@ -114,9 +377,37 @@
     {
       "MatchedTranspiler": {
         "TranspilerId": "8defe7a3-89cf-4989-b679-d9226519f622",
+        "AccountHolderId": "9aeb4f89-3c90-4972-927c-7deebfbb9de4",
         "Name": "OdxmlToNodeJSDocs",
-        "Description": "Creates easy to read/navigate html documentation for an Odxml Schema."
+        "DisplayName": "Odxml To Node J S Docs",
+        "Description": "Creates easy to read/navigate html documentation for an Odxml Schema.",
+        "CreatedOn": "2017-08-29T21:18:01.293",
+        "IsActive": true,
+        "CurrentRoutingKey": "amq.gen-1udZlHg208qUf6jrCpeFVg",
+        "LowerName": "odxmltonodejsdocs",
+        "UpperName": "ODXMLTONODEJSDOCS",
+        "LowerHyphenName": "odxml-to-node-j-s-docs",
+        "ReadMeMD": "Examines the schema defined by an Odxml file and creates an interactive DataModel explorer for exploring the structure of the data model defined. \r\n\r\nCreates both a single page version of the docs, as well as a Node.JS website that can be started on demand to explore the data model more interactively.",
+        "InputFileTypeId": "33de424c-cfe0-498e-ae70-44da375a8fb2",
+        "OutputFileTypeId": "d8fc84b7-442d-4c7a-92a0-eefc11391934",
+        "Category": "documentation",
+        "IsRecommended": true,
+        "TranspileRequests": [],
+        "TranspilerInstances": [],
+        "TranspilerVersions": [
+          {
+            "TranspilerVersionId": "26af4ad8-fb5d-4027-8e4b-2260c62f3f24",
+            "TranspilerId": "8defe7a3-89cf-4989-b679-d9226519f622",
+            "Name": "v1",
+            "CreatedOn": "2017-08-29T21:18:03.463",
+            "IsActive": true,
+            "TranspilerFileTypeId_TranspilerInputHints": [],
+            "TranspilerInstances": [],
+            "ReplacedByTranspilerVersionId_TranspilerVersions": []
+          }
+        ]
       },
+      "CLIHandler": null,
       "ProjectTranspilerId": "c3e7c826-e810-450b-b74d-8a2ea754dc36",
       "Name": "OdxmlToNodeJSDocs",
       "RelativePath": "/ODXML/RAW",
@@ -125,9 +416,31 @@
     {
       "MatchedTranspiler": {
         "TranspilerId": "522983b1-156a-4c78-ae2f-4009fc3e3798",
+        "AccountHolderId": "1e876e4f-d63b-4698-bd68-3bc27876e41e",
         "Name": "PlantTextToJson",
-        "Description": "PlantText to Json"
+        "DisplayName": "Plant Text To Json",
+        "Description": "PlantText to Json",
+        "CreatedOn": "2022-11-16T00:04:39.143",
+        "IsActive": true,
+        "LowerName": "planttexttojson",
+        "UpperName": "PLANTTEXTTOJSON",
+        "LowerHyphenName": "plant-text-to-json",
+        "TranspileRequests": [],
+        "TranspilerInstances": [],
+        "TranspilerVersions": [
+          {
+            "TranspilerVersionId": "cdbc86ad-5381-4c23-a534-4bc65afc8d4b",
+            "TranspilerId": "522983b1-156a-4c78-ae2f-4009fc3e3798",
+            "Name": "v1",
+            "CreatedOn": "2022-11-16T00:05:17.66",
+            "IsActive": true,
+            "TranspilerFileTypeId_TranspilerInputHints": [],
+            "TranspilerInstances": [],
+            "ReplacedByTranspilerVersionId_TranspilerVersions": []
+          }
+        ]
       },
+      "CLIHandler": null,
       "ProjectTranspilerId": "fc100618-9d9f-4d2d-9359-779bc44a3525",
       "Name": "PlantTextToJson",
       "RelativePath": "/docs/SamplePlantText",
@@ -136,9 +449,40 @@
     {
       "MatchedTranspiler": {
         "TranspilerId": "b57bcecf-ae78-40f0-b475-95447d7f61a1",
+        "AccountHolderId": "1e876e4f-d63b-4698-bd68-3bc27876e41e",
         "Name": "JsonToXml",
-        "Description": "Converts a json blob (or file) into Xml"
+        "DisplayName": "Json To Xml",
+        "Description": "Converts a json blob (or file) into Xml",
+        "CreatedOn": "2017-06-03T22:33:09.527",
+        "IsActive": true,
+        "CurrentRoutingKey": "amq.gen-oTOwWY09y9fflImFqdwieA",
+        "LowerName": "jsontoxml",
+        "UpperName": "JSONTOXML",
+        "LowerHyphenName": "json-to-xml",
+        "ReadMeMD": "Converts a json file into xml use the object property names as the names of the elements in the xml file.",
+        "InputDescriptionMD": "A validly formatted json file.",
+        "OutputDescriptionMD": "Will output a file called my-data.json.xml iwth an Xml version of the input json.",
+        "ExampleMD": "ssotme json-to-xml -i my-data.json",
+        "InputFileTypeId": "e827499f-f215-4b35-8dae-6bd423a75e4c",
+        "OutputFileTypeId": "f1b92a2a-3f83-4000-9b37-57f920e14419",
+        "Category": "type-conversion",
+        "IsRecommended": true,
+        "TranspileRequests": [],
+        "TranspilerInstances": [],
+        "TranspilerVersions": [
+          {
+            "TranspilerVersionId": "0e1a7915-f9c0-4430-9f04-9b21662c3634",
+            "TranspilerId": "b57bcecf-ae78-40f0-b475-95447d7f61a1",
+            "Name": "v1",
+            "CreatedOn": "2017-06-03T22:33:16.613",
+            "IsActive": true,
+            "TranspilerFileTypeId_TranspilerInputHints": [],
+            "TranspilerInstances": [],
+            "ReplacedByTranspilerVersionId_TranspilerVersions": []
+          }
+        ]
       },
+      "CLIHandler": null,
       "ProjectTranspilerId": "32b88520-bf74-44c2-8e8f-9abd4fe22160",
       "Name": "JsonToXml",
       "RelativePath": "/docs/SamplePlantText",
@@ -147,13 +491,73 @@
     {
       "MatchedTranspiler": {
         "TranspilerId": "cb5fe640-ebfa-4643-afd9-25fe8deb5df4",
+        "AccountHolderId": "9f8c5b34-d7e5-48f9-9d1a-def1e2eac7f8",
         "Name": "PlantTextJsonToStateMachineXml",
-        "Description": "PlantText Json To State Machine Xml"
+        "DisplayName": "Plant Text Json To State Machine Xml",
+        "Description": "PlantText Json To State Machine Xml",
+        "CreatedOn": "2022-11-17T16:13:14.403",
+        "IsActive": true,
+        "CurrentRoutingKey": "amq.gen-OmFPIamhBtO9AD5vWkQePQ",
+        "LowerName": "planttextjsontostatemachinexml",
+        "UpperName": "PLANTTEXTJSONTOSTATEMACHINEXML",
+        "LowerHyphenName": "plant-text-json-to-state-machine-xml",
+        "TranspileRequests": [],
+        "TranspilerInstances": [],
+        "TranspilerVersions": [
+          {
+            "TranspilerVersionId": "25fedaf0-3a63-47a7-83e5-1586c452aec5",
+            "TranspilerId": "cb5fe640-ebfa-4643-afd9-25fe8deb5df4",
+            "Name": "v1",
+            "CreatedOn": "2022-11-17T16:13:15.95",
+            "IsActive": true,
+            "TranspilerFileTypeId_TranspilerInputHints": [],
+            "TranspilerInstances": [],
+            "ReplacedByTranspilerVersionId_TranspilerVersions": []
+          }
+        ]
       },
+      "CLIHandler": null,
       "ProjectTranspilerId": "6db81d6c-0040-48e0-a817-a036c8faf1cb",
       "Name": "PlantTextJsonToStateMachineXml",
       "RelativePath": "/docs/SamplePlantText",
       "CommandLine": "drawio/planttextjsontostatemachinexml -i .\\sample1.txt.json -o sample1.txt.json.drawio-statemachine.xml"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "8b9caa4f-d8ed-4acb-b0e3-adfa0e1369a9",
+        "AccountHolderId": "9f8c5b34-d7e5-48f9-9d1a-def1e2eac7f8",
+        "Name": "StateMachineXmlToCSharpStateMachine",
+        "DisplayName": "State Machine Xml To C Sharp State Machine",
+        "Description": "State Machine Xml To CSharp StateMachine",
+        "CreatedOn": "2022-11-17T23:52:44.45",
+        "IsActive": true,
+        "CurrentRoutingKey": "",
+        "LowerName": "statemachinexmltocsharpstatemachine",
+        "UpperName": "STATEMACHINEXMLTOCSHARPSTATEMACHINE",
+        "LowerHyphenName": "state-machine-xml-to-c-sharp-state-machine",
+        "ReadMeMD": "using StateMachine.Fluent.Api;\r\nFrom the nuget package from Unterrainer Informatik OG Team\r\n",
+        "InputFileTypeId": "f1b92a2a-3f83-4000-9b37-57f920e14419",
+        "OutputFileTypeId": "47f5fc9f-0c22-4f73-8d18-0544a7f05d7b",
+        "TranspileRequests": [],
+        "TranspilerInstances": [],
+        "TranspilerVersions": [
+          {
+            "TranspilerVersionId": "8005da76-58c2-4f9b-bae2-17b316569b9b",
+            "TranspilerId": "8b9caa4f-d8ed-4acb-b0e3-adfa0e1369a9",
+            "Name": "v1",
+            "CreatedOn": "2022-11-17T23:52:52.497",
+            "IsActive": true,
+            "TranspilerFileTypeId_TranspilerInputHints": [],
+            "TranspilerInstances": [],
+            "ReplacedByTranspilerVersionId_TranspilerVersions": []
+          }
+        ]
+      },
+      "CLIHandler": null,
+      "ProjectTranspilerId": "eb5696b9-c12e-4143-afcc-62a48fc759e7",
+      "Name": "StateMachineXmlToCSharpStateMachine",
+      "RelativePath": "/docs/SamplePlantText",
+      "CommandLine": "drawio/statemachinexml-to-csharp-statemachine -i .\\DrawIOStateMachine.xml"
     }
   ]
 }

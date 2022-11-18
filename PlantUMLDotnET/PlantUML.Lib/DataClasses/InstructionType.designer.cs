@@ -40,6 +40,9 @@ namespace plantumldotnetparser.Lib.DataClasses
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "SampleStatement")]
         public String SampleStatement { get; set; }
     
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "SortOrder")]
+        public Nullable<Byte> SortOrder { get; set; }
+    
 
         
 
