@@ -121,6 +121,39 @@
       "Name": "OdxmlToNodeJSDocs",
       "RelativePath": "/ODXML/RAW",
       "CommandLine": "odxml42/odxml-to-nodejs-docs -i .\\DataSchema.odxml"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "522983b1-156a-4c78-ae2f-4009fc3e3798",
+        "Name": "PlantTextToJson",
+        "Description": "PlantText to Json"
+      },
+      "ProjectTranspilerId": "fc100618-9d9f-4d2d-9359-779bc44a3525",
+      "Name": "PlantTextToJson",
+      "RelativePath": "/docs/SamplePlantText",
+      "CommandLine": "planttext-to-json -i .\\sample1.txt"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "b57bcecf-ae78-40f0-b475-95447d7f61a1",
+        "Name": "JsonToXml",
+        "Description": "Converts a json blob (or file) into Xml"
+      },
+      "ProjectTranspilerId": "32b88520-bf74-44c2-8e8f-9abd4fe22160",
+      "Name": "JsonToXml",
+      "RelativePath": "/docs/SamplePlantText",
+      "CommandLine": "json-to-xml -i .\\sample1.txt.json"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "cb5fe640-ebfa-4643-afd9-25fe8deb5df4",
+        "Name": "PlantTextJsonToStateMachineXml",
+        "Description": "PlantText Json To State Machine Xml"
+      },
+      "ProjectTranspilerId": "6db81d6c-0040-48e0-a817-a036c8faf1cb",
+      "Name": "PlantTextJsonToStateMachineXml",
+      "RelativePath": "/docs/SamplePlantText",
+      "CommandLine": "drawio/planttextjsontostatemachinexml -i .\\sample1.txt.json -o sample1.txt.json.drawio-statemachine.xml"
     }
   ]
 }
