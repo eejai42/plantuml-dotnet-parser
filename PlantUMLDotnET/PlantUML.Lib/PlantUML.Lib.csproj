@@ -45,7 +45,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="DataClasses\CoreLibraryExtensions.cs" />
     <Compile Include="DataClasses\Instruction.cs" />
     <Compile Include="DataClasses\Instruction.designer.cs">
@@ -81,7 +80,6 @@
     <Compile Include="DataClasses\TargetFormat.designer.cs">
       <DependentUpon>TargetFormat.cs</DependentUpon>
     </Compile>
-    <Compile Include="Extensions\PlantTextExtensions.cs" />
     <Compile Include="ParsedUML.cs" />
     <Compile Include="PlantUMLParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -92,5 +90,6 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
