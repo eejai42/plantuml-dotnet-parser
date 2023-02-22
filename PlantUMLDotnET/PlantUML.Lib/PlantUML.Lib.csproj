@@ -82,7 +82,6 @@
     </Compile>
     <Compile Include="ParsedUML.cs" />
     <Compile Include="PlantUMLParser.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="DataClasses\CreateDerivativeCode.xslt" />
@@ -90,6 +89,8 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
